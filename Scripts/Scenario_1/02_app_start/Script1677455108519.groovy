@@ -23,8 +23,23 @@ Mobile.startExistingApplication(GlobalVariable.appid)
 'STEP - 알림 [허용] 선택'
 Mobile.tap(findTestObject('Scenario_1/btn_permission_allow_alarm'), GlobalVariable.fixedTime)
 
-'기대결과 - 이용 권한 안내 화면 "똑닥 앱 이용 권한 안내 화면" 문구 노출'
-Mobile.verifyElementVisible(findTestObject('Scenario_1/txt_Permission_information'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+// -----------------------------------------------------------------------------------------------------------------------------------------
 
-'기대결과 - 이용 권한 안내 화면 [확인] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('Scenario_1/btn_OK'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+'STEP - 위치 권한 안내 화면 [확인] 버튼 선택'
+Mobile.tap(findTestObject('Scenario_1/btn_OK'), GlobalVariable.fixedTime)
+
+'STEP - 위치 권한 [앱 사용 중에만 허용] 선택'
+Mobile.tap(findTestObject('Scenario_1/btn_permission_allow_foreground_only'), GlobalVariable.fixedTime)
+
+'STEP - 전화 권환 [허용] 선택'
+Mobile.tap(findTestObject('Scenario_1/btn_permission_allow_phone'), GlobalVariable.fixedTime)
+
+'기대결과 - 온보딩 화면 [둘러보기] 버튼 노출'
+Mobile.verifyElementVisible(findTestObject('Scenario_2/btn_tvSkipTitle'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 온보딩 화면 [카카오로 시작하기] 버튼 노출'
+Mobile.verifyElementVisible(findTestObject('Scenario_2/btn_commonBtnTitle'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 온보딩 화면 [이메일 로그인] 버튼 노출'
+Mobile.verifyElementVisible(findTestObject('Scenario_2/btn_tvEmailLoginBtn'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
