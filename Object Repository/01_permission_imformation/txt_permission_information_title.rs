@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>온보딩 > [이메일 로그인}</description>
-   <name>btn_tvEmailLoginBtn</name>
+   <description>앱 실행 > 권한 안내 > 타이틀</description>
+   <name>txt_permission_information_title</name>
    <tag></tag>
-   <elementGuidId>00000000-0000-0000-0000-000000000000</elementGuidId>
+   <elementGuidId>f108232d-51ca-4393-8f0b-cecf35d2a284</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>android.widget.TextView</value>
-      <webElementGuid>4782158b-f262-4a96-9064-08f24263c363</webElementGuid>
+      <webElementGuid>0e9bef84-2335-4b99-8980-4124b7df8ace</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>index</name>
       <type>Main</type>
-      <value>5</value>
-      <webElementGuid>d18f9f90-8717-480e-8bb0-d6c920147160</webElementGuid>
+      <value>0</value>
+      <webElementGuid>fe077725-6ade-4056-aad8-84d7e5ae4f2c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>이메일 로그인</value>
-      <webElementGuid>cc1b5270-5c75-4372-b2cc-ffd2c01f0d2a</webElementGuid>
+      <value>똑닥 앱 이용을 위한 권한 안내</value>
+      <webElementGuid>685691ed-6877-4136-b54e-32a9fb64c26c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tvEmailLoginBtn</value>
-      <webElementGuid>0cf1102a-24db-4abb-b32d-2bef2e182252</webElementGuid>
+      <value>com.bbros.sayup.debug:id/tvTitle</value>
+      <webElementGuid>e32599b2-3ee6-4235-ab97-27fc2a9114e1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -44,7 +44,7 @@
       <name>package</name>
       <type>Main</type>
       <value>com.bbros.sayup.debug</value>
-      <webElementGuid>4b488012-2948-427a-bcb9-84aad8a3ee56</webElementGuid>
+      <webElementGuid>9b78c4c6-1e6d-4226-a569-6a4495d90a5e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -52,7 +52,7 @@
       <name>checkable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4edfdbef-7ad1-4d30-bb79-574ffcd6ea62</webElementGuid>
+      <webElementGuid>11cc42ac-f257-48ee-9d03-0bf048d13a97</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -60,15 +60,15 @@
       <name>checked</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>401b1c41-254b-4061-bc8f-42b9b17268ba</webElementGuid>
+      <webElementGuid>a4859026-dd27-4980-8f40-7fe528beb0b2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>clickable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>2edd45ba-8738-4696-afc2-31b047fff826</webElementGuid>
+      <value>false</value>
+      <webElementGuid>d25aff69-ebf9-4104-90f9-1ce21212af10</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -76,15 +76,15 @@
       <name>enabled</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>ee0bf694-8ba4-4914-93e8-859a7b71a65c</webElementGuid>
+      <webElementGuid>b088b6aa-f961-401f-a53a-1304e8d44e69</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>focusable</name>
       <type>Main</type>
-      <value>true</value>
-      <webElementGuid>dce834c8-fe8f-42eb-ad6d-b0d7b7f7a57f</webElementGuid>
+      <value>false</value>
+      <webElementGuid>47820a51-e42e-4a4a-81c1-9447d74aa3e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -92,7 +92,7 @@
       <name>focused</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>035167a9-5ba1-4cb7-a0a4-e3a6ce4f77eb</webElementGuid>
+      <webElementGuid>a751e900-b329-422a-81b7-cb0644d00645</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -100,7 +100,7 @@
       <name>scrollable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>4fd415a6-6ff1-4ffa-89af-e75cdedc03d5</webElementGuid>
+      <webElementGuid>486b0aff-8d26-45d9-9e06-1f4d746bfe20</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -108,7 +108,7 @@
       <name>long-clickable</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>f354d1dd-c547-4002-be44-720ead3337d8</webElementGuid>
+      <webElementGuid>c38ec028-ef28-4056-9c7f-82135babc4fd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -116,7 +116,7 @@
       <name>password</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>6b2b539d-7e87-4efa-b756-e943baf7ef37</webElementGuid>
+      <webElementGuid>8f484886-f666-446c-b86d-24875213ef42</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -124,47 +124,47 @@
       <name>selected</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>5a419c6a-710b-4311-99a2-acfb6a34400e</webElementGuid>
+      <webElementGuid>ce0ad295-a8a1-4be2-8888-21285952e93d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>x</name>
       <type>Main</type>
-      <value>416</value>
-      <webElementGuid>15c73858-35bf-49c4-8cd7-5d08682796e4</webElementGuid>
+      <value>199</value>
+      <webElementGuid>8a5a95d7-4485-4f78-a7dd-059b9923c1c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>y</name>
       <type>Main</type>
-      <value>2324</value>
-      <webElementGuid>ed0c07d1-46ac-40e0-a73a-5516cfe74ea2</webElementGuid>
+      <value>246</value>
+      <webElementGuid>80d69070-fc9c-4531-97e6-b752db5c2d59</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>width</name>
       <type>Main</type>
-      <value>249</value>
-      <webElementGuid>f1bc2fb5-132d-420c-bf47-a43b33eb49ec</webElementGuid>
+      <value>682</value>
+      <webElementGuid>5891c3b9-294f-4476-baab-d36b32dd21c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>height</name>
       <type>Main</type>
-      <value>85</value>
-      <webElementGuid>ce0b66d3-1921-4cdb-8f3a-df538d17143a</webElementGuid>
+      <value>74</value>
+      <webElementGuid>4f14c958-ff81-465f-9d7c-24f32b5095e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>bounds</name>
       <type>Main</type>
-      <value>[416,2324][665,2409]</value>
-      <webElementGuid>1fea0dba-ba7a-4cf9-9133-f3552e2746b7</webElementGuid>
+      <value>[199,246][881,320]</value>
+      <webElementGuid>8b1d6e3c-74be-4cd4-bc7e-9f21914f0b5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -172,16 +172,16 @@
       <name>displayed</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>f86864ad-ac07-4d95-9964-23679d076d68</webElementGuid>
+      <webElementGuid>54d2e7c7-faf4-4a9a-83da-830e5ef2f176</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.TextView[2]</value>
-      <webElementGuid>c07da927-50fd-4ab4-90b5-f1cb95789f53</webElementGuid>
+      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.TextView[1]</value>
+      <webElementGuid>8606cc68-44e4-4c4b-80ac-5a768945f958</webElementGuid>
    </webElementProperties>
-   <locator>//*[@class = 'android.widget.TextView' and (@text = '이메일 로그인' or . = '이메일 로그인') and @resource-id = 'com.bbros.sayup.debug:id/tvEmailLoginBtn']</locator>
+   <locator>//*[(@text = '똑닥 앱 이용을 위한 권한 안내' or . = '똑닥 앱 이용을 위한 권한 안내') and @resource-id = 'com.bbros.sayup.debug:id/tvTitle']</locator>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>
 </MobileElementEntity>

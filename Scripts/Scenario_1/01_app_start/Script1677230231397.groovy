@@ -21,10 +21,10 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 알림 [허용] 선택'
-Mobile.tap(findTestObject('Scenario_1/btn_permission_allow_alarm'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime)
 
 '기대결과 - 이용 권한 안내 화면 "똑닥 앱 이용 권한 안내 화면" 문구 노출'
-Mobile.verifyElementVisible(findTestObject('Scenario_1/txt_Permission_information'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('01_permission_imformation/txt_Permission_information'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 이용 권한 안내 화면 [확인] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('Scenario_1/btn_OK'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('01_permission_imformation/btn_permission_ok'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
