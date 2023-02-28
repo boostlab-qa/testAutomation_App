@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>고정된 시간</description>
-      <initValue>3</initValue>
+      <initValue>5</initValue>
       <name>fixedTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>apk path</description>
-      <initValue>'C:\\apk\\app-debug.apk'</initValue>
+      <initValue>'C:\\apk\\ddocdoc.apk'</initValue>
       <name>apk</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

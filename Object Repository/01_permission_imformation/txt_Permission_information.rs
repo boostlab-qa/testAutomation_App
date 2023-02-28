@@ -3,32 +3,16 @@
    <description>앱 실행 > 이용 권한 안내 화면 > &quot;똑닥 앱 이용을 위한 권한 안내&quot;</description>
    <name>txt_Permission_information</name>
    <tag></tag>
-   <elementGuidId>281e1994-00b9-45c8-bdd9-92d60eb90e69</elementGuidId>
+   <elementGuidId>e612a684-5c55-46df-a9b7-a7d082189daf</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>android.widget.TextView</value>
-      <webElementGuid>a67e1c6f-6ff6-41f8-911d-d4a69f669354</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>index</name>
-      <type>Main</type>
-      <value>0</value>
-      <webElementGuid>dda862b1-b089-4653-b8a0-14139ccb4ed4</webElementGuid>
-   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
       <value>똑닥 앱 이용을 위한 권한 안내</value>
-      <webElementGuid>076bbf9a-d1d5-45e1-b99c-f2ae481593ad</webElementGuid>
+      <webElementGuid>7247a35a-7c49-4cb2-84c8-4ae64988b9d8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,151 +20,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.bbros.sayup.debug:id/tvTitle</value>
-      <webElementGuid>1cd12621-b288-4e66-8a77-d0134d1130ee</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>package</name>
-      <type>Main</type>
-      <value>com.bbros.sayup.debug</value>
-      <webElementGuid>e1151d4a-6744-462b-b3aa-5ed65d549884</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>checkable</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>bbdd1550-624f-4b3c-9aaf-e0db22c8e3be</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>checked</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>90c4e11b-a3e1-4576-8dc2-1400c4d2bfbb</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>clickable</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>a604563a-b2d4-4856-8ed8-5d3576e1d7ef</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>enabled</name>
-      <type>Main</type>
-      <value>true</value>
-      <webElementGuid>318dbb2a-5876-41ee-9638-19d1b3ba8816</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>focusable</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>8e26a475-fab6-43be-8206-ee27885388fb</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>focused</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>d230fb22-e020-4027-9b48-c5edeb194ef3</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>scrollable</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>56b5e747-901d-46f8-98a9-c9ba2954e69e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>long-clickable</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>4e254441-da72-4595-be4a-9998a69fad62</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>password</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>ef9dcb6a-4c8b-4f10-8e7d-baa0d1b86295</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>selected</name>
-      <type>Main</type>
-      <value>false</value>
-      <webElementGuid>8df99875-4dcd-4628-a89d-63e7c384ccda</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>x</name>
-      <type>Main</type>
-      <value>199</value>
-      <webElementGuid>a20eba6d-a6ef-41ca-989c-dfc87b759281</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>y</name>
-      <type>Main</type>
-      <value>246</value>
-      <webElementGuid>85b044ca-b19d-4adc-8051-4635f131b11a</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>width</name>
-      <type>Main</type>
-      <value>682</value>
-      <webElementGuid>90028bce-7683-4899-95bc-13f9f4245fa0</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>height</name>
-      <type>Main</type>
-      <value>74</value>
-      <webElementGuid>329dde5e-3c17-4742-93bd-638589d8b130</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>bounds</name>
-      <type>Main</type>
-      <value>[199,246][881,320]</value>
-      <webElementGuid>fc267a91-6806-4cc9-967d-90e69e8bf0ab</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>displayed</name>
-      <type>Main</type>
-      <value>true</value>
-      <webElementGuid>5991a144-feaa-44e7-9a77-3104785de748</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>//hierarchy/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.TextView[1]</value>
-      <webElementGuid>662fe15d-ea79-4832-9d63-5eab02781b19</webElementGuid>
+      <webElementGuid>18fa4266-66e6-4a0e-a65c-65ca8bf92be2</webElementGuid>
    </webElementProperties>
    <locator>//*[(@text = '똑닥 앱 이용을 위한 권한 안내' or . = '똑닥 앱 이용을 위한 권한 안내') and @resource-id = 'com.bbros.sayup.debug:id/tvTitle']</locator>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>

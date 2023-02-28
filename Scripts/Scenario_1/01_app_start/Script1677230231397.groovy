@@ -18,10 +18,13 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 'STEP - 똑닥 앱 실행'
-Mobile.startExistingApplication(GlobalVariable.appid)
+Mobile.startApplication(GlobalVariable.apk, false)
 
-'STEP - 알림 [허용] 선택'
+'STEP - 알림 팝업 노출 시 [허용] 선택'
+if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime))
+{
 Mobile.tap(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime)
+}
 
 '기대결과 - 이용 권한 안내 화면 "똑닥 앱 이용 권한 안내 화면" 문구 노출'
 Mobile.verifyElementVisible(findTestObject('01_permission_imformation/txt_Permission_information'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
