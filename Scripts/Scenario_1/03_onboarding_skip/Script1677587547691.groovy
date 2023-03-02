@@ -32,7 +32,7 @@ Mobile.verifyElementVisible(findTestObject('03_home/01_home_popup/btn_maketing_c
 'STEP - [좋아요!] 선택'
 Mobile.tap(findTestObject('03_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
 
-'STEP - 이벤트 팝업 노출 시 [닫기] 선택'
+'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
 if (Mobile.waitForElementPresent(findTestObject('03_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
 {
 		Mobile.tap(findTestObject('03_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
@@ -44,3 +44,6 @@ Mobile.verifyElementVisible(findTestObject('03_home/home_constraint_address'), G
 Mobile.verifyElementVisible(findTestObject('03_home/home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyElementVisible(findTestObject('03_home/home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
+
+'온보딩까지 실행했다면 true 값 적용'
+GlobalVariable.run = true

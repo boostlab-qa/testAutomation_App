@@ -24,6 +24,11 @@ public class GlobalVariable {
      */
     public static Object apk
      
+    /**
+     * <p></p>
+     */
+    public static Object run
+     
 
     static {
         try {
@@ -34,6 +39,7 @@ public class GlobalVariable {
             appid = selectedVariables['appid']
             fixedTime = selectedVariables['fixedTime']
             apk = selectedVariables['apk']
+            run = selectedVariables['run']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
