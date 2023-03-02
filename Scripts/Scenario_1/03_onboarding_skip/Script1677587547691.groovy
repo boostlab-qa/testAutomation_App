@@ -24,26 +24,29 @@ Mobile.startExistingApplication(GlobalVariable.appid)
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_skip'), GlobalVariable.fixedTime)
 
 '기대결과 - 마케팅 정보 수신 동의 팝업 노출'
-Mobile.verifyElementVisible(findTestObject('03_home/01_home_popup/txt_maketing_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('03_home/01_home_popup/img_maketing_character'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('03_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('03_home/01_home_popup/btn_maketing_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/txt_maketing_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/img_maketing_character'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_maketing_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [좋아요!] 선택'
-Mobile.tap(findTestObject('03_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
+
+'마케팅 수신 동의 시 true 값 적용'
+GlobalVariable.maketing = true
 
 'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
-if (Mobile.waitForElementPresent(findTestObject('03_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
 {
-		Mobile.tap(findTestObject('03_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
+		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
 }
 	
 //비로그인 상태 홈 화면
 '기대결과 - 홈 화면 노출'
-Mobile.verifyElementVisible(findTestObject('03_home/home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('03_home/home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('03_home/home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
-'온보딩까지 실행했다면 true 값 적용'
+'GlobalVariable.run 에 true 값 적용'
 GlobalVariable.run = true

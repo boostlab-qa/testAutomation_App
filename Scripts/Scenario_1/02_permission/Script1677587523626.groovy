@@ -44,9 +44,15 @@ Mobile.verifyElementVisible(findTestObject('01_permission_imformation/btn_permis
 'STEP - 기기 전화 액세스 허용 선택'
 Mobile.tap(findTestObject('01_permission_imformation/btn_permission_call_allow'), GlobalVariable.fixedTime)
 
-'기대결과 - 온보딩 화면 노출'
+'기대결과 - 온보딩 화면 타이틀 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 온보딩 화면 [둘러보기] 버튼 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_skip'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 온보딩 화면 [카카오로 시작하기] 버튼 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_kakao_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 온보딩 화면 [이메일 로그인] 버튼 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 

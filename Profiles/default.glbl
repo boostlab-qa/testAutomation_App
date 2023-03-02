@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>고정된 시간</description>
-      <initValue>5</initValue>
+      <initValue>3</initValue>
       <name>fixedTime</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -23,5 +23,30 @@
       <description></description>
       <initValue>''</initValue>
       <name>run</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>진료완료 유무</description>
+      <initValue>'true'</initValue>
+      <name>complete_reception</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'박명근'</initValue>
+      <name>user_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>maketing</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>이메일 아이디</description>
+      <initValue>'qa20@qa.com'</initValue>
+      <name>email_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>이메일 패스워드</description>
+      <initValue>'qwer1234!'</initValue>
+      <name>email_password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
