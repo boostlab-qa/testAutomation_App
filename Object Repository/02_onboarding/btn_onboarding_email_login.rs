@@ -3,7 +3,7 @@
    <description>앱실행 > 권한 안내 > 온보딩 > [이메일 로그인]</description>
    <name>btn_onboarding_email_login</name>
    <tag></tag>
-   <elementGuidId>0c5f33b7-9521-4d61-9ae7-aa6a5960195e</elementGuidId>
+   <elementGuidId>e2562c33-3e50-4da6-928e-4e26bf5c5c03</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tvEmailLoginBtn</value>
-      <webElementGuid>71994b1f-dffe-45ce-87cb-7b49cd8f431d</webElementGuid>
+      <value>com.bbros.sayup:id/tvEmailLoginBtn</value>
+      <webElementGuid>be78a9b4-5247-4f48-a5c2-fbfd13c9b1af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>이메일 로그인</value>
-      <webElementGuid>f875f454-90e4-411e-b159-88544122f1bd</webElementGuid>
+      <webElementGuid>487fa6eb-8c27-47e5-9eaf-2558a008e080</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvEmailLoginBtn' and (@text = '이메일 로그인' or . = '이메일 로그인')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvEmailLoginBtn' and (@text = '이메일 로그인' or . = '이메일 로그인')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

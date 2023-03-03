@@ -1,0 +1,915 @@
+[35m[Appium][39m Welcome to Appium v1.22.3
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 64094
+[35m[Appium][39m   loglevel: info
+[35m[Appium][39m   tmpDir: C:\Windows\TEMP\\Katalon\Appium\Temp1677811844247
+[35m[Appium][39m   chromedriverPort: 64095
+[35m[Appium][39m Deprecated server args:
+[35m[Appium][39m   [31m--chromedriver-port[39m => --default-capabilities
+[35m[Appium][39m Default capabilities, which will be added to each request unless overridden by desired capabilities:
+[35m[Appium][39m   chromedriverPort: 64095
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:64094
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m7 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"app":"C:\\apk\\real_9_7_4.apk","noReset":false,"deviceId":"","deviceName":"samsung SM-N981N (Android 12)","fullReset":true,"platform":"ANDROID","newCommandTimeout":1800,"platformVersion":"12","automationName":"uiautomator2","autoGrantPermissions":true,"platformName":"Android","udid":"R3CN80JN18A","systemPort":64093},"capabilities":{"firstMatch":[{"appium:app":"C:\\apk\\real_9_7_4.apk","appium:autoGrantPermissions":true,"appium:automationName":"uiautomator2","deviceId":"","appium:deviceName":"samsung SM-N981N (Android 12)","appium:fullReset":true,"appium:newCommandTimeout":1800,"appium:noReset":false,"platform":"ANDROID","platformName":"android","appium:platformVersion":"12","appium:systemPort":64093,"appium:udid":"R3CN80JN18A"}]}}[39m
+[35m[BaseDriver][39m The following capabilities are not standard capabilities and should have an extension prefix:
+[35m[BaseDriver][39m   deviceId
+[35m[BaseDriver][39m   platform
+[35m[BaseDriver][39m   chromedriverPort
+[35m[Appium][39m Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by Appium:
+[35m[BaseDriver][39m   deviceId
+[35m[BaseDriver][39m   platform
+[35m[BaseDriver][39m Session created with session id: 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[BaseDriver][39m Using local app 'C:\apk\real_9_7_4.apk'
+[35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\박명근\.katalon\tools\android_sdk' (newest first):
+[35m[ADB][39m     C:/Users/박명근/.katalon/tools/android_sdk/build-tools/29.0.3
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\박명근\.katalon\tools\android_sdk\platform-tools\adb.exe'
+[35m[AndroidDriver][39m Retrieving device list
+[35m[AndroidDriver][39m Using device: R3CN80JN18A
+[35m[ADB][39m Using 'adb.exe' from 'C:\Users\박명근\.katalon\tools\android_sdk\platform-tools\adb.exe'
+[35m[ADB][39m Getting device platform version
+[35m[UiAutomator2][39m Relaxing hidden api policy
+[35m[ADB][39m Package name: 'com.bbros.sayup'
+[35m[ADB][39m Main activity name: 'com.bbros.sayup.ui.view.splash.SplashActivity'
+[35m[ADB][39m Using 'apksigner.jar' from 'C:\Users\박명근\.katalon\tools\android_sdk\build-tools\29.0.3\lib\apksigner.jar'
+[35m[ADB][39m 'C:\Users\박명근\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' is signed with the default certificate
+[35m[ADB][39m 'C:\Users\박명근\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+[35m[UiAutomator2][39m Server packages are not going to be (re)installed
+[35m[ADB][39m Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+[35m[ADB][39m 'C:\apk\real_9_7_4.apk' is signed with a non-default certificate
+[35m[ADB][39m com.bbros.sayup was successfully uninstalled
+[35m[ADB][39m The application at 'C:\apk\real_9_7_4.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+[35m[ADB][39m The installation of 'real_9_7_4.apk' took 5951ms
+[35m[UiAutomator2][39m Starting UIAutomator2 server 4.27.0
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Users\박명근\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v4.27.0.apk' and test from 'C:\Users\박명근\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Waiting up to 30000ms for UiAutomator2 to be online...
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m socket hang up
+[35m[WD Proxy][39m Determined the downstream protocol as 'W3C'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m Starting 'com.bbros.sayup/com.bbros.sayup.ui.view.splash.SplashActivity and waiting for 'com.bbros.sayup/com.bbros.sayup.ui.view.splash.SplashActivity'
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 428117f8-6dd8-4605-9e8e-b864994acf01 added to master session list
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m17831 ms - 1226[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01 [39m[32m200[39m [90m7 ms - 1180[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01 [39m[32m200[39m [90m5 ms - 1180[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m1 ms - 68[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/screenshot[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/screenshot [39m[32m200[39m [90m325 ms - 54362[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m22 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/appium/device/system_bars[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/appium/device/system_bars [39m[32m200[39m [90m113 ms - 145[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m19 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m150 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m112 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m73 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m100 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m652 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m97 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m79 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m70 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m69 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m78 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m103 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m61 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m53 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m82 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m52 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m74 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m51 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m73 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m101 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m63 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m73 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m84 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m66 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m70 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m63 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m56 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m7 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[(@text = '확인' or . = '확인') and @resource-id = 'com.bbros.sayup:id/confirmBtn']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m100 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d1-ffff-ffff000000a6/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d1-ffff-ffff000000a6/location [39m[32m200[39m [90m23 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d1-ffff-ffff000000a6/click[39m
+[35m[HTTP][39m [90m{"id":"00000000-0000-01d1-ffff-ffff000000a6"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d1-ffff-ffff000000a6/click [39m[32m200[39m [90m57 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m14 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m1080 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m87 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m93 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m105 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m92 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m144 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m68 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m96 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m63 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m67 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m84 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m55 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m55 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m55 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m72 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m61 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m64 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m88 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m55 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m64 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m75 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m61 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.android.permissioncontroller:id/permission_allow_foreground_only_button' and (@text = '앱 사용 중에만 허용' or . = '앱 사용 중에만 허용')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m76 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m3 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m22 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_on_boarding_title']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m48 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000128/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000128/location [39m[32m200[39m [90m10 ms - 77[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000128/displayed[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000128/displayed [39m[32m200[39m [90m10 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m10 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tvSkipTitle' and (@text = '둘러보기' or . = '둘러보기')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m526 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000125/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000125/location [39m[32m200[39m [90m18 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000125/displayed[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff00000125/displayed [39m[32m200[39m [90m13 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m15 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '카카오로 시작하기' or . = '카카오로 시작하기')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m64 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/location [39m[32m200[39m [90m8 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/displayed[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/displayed [39m[32m200[39m [90m8 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m10 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tvEmailLoginBtn' and (@text = '이메일 로그인' or . = '이메일 로그인')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m51 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012f/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012f/location [39m[32m200[39m [90m19 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012f/displayed[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012f/displayed [39m[32m200[39m [90m19 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m16 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '카카오로 시작하기' or . = '카카오로 시작하기')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m54 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/location [39m[32m200[39m [90m20 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/click[39m
+[35m[HTTP][39m [90m{"id":"00000000-0000-01d3-ffff-ffff0000012e"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d3-ffff-ffff0000012e/click [39m[32m200[39m [90m44 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m9 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/loginWithKakaoTalkContainer']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m962 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d4-ffff-ffff0000019f/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d4-ffff-ffff0000019f/location [39m[32m200[39m [90m22 ms - 78[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d4-ffff-ffff0000019f/click[39m
+[35m[HTTP][39m [90m{"id":"00000000-0000-01d4-ffff-ffff0000019f"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d4-ffff-ffff0000019f/click [39m[32m200[39m [90m58 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m5 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tvCommonButtonView' and (@text = '좋아요!' or . = '좋아요!')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m2465 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tvCommonButtonView' and (@text = '좋아요!' or . = '좋아요!')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m133 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tvCommonButtonView' and (@text = '좋아요!' or . = '좋아요!')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m77 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tvCommonButtonView' and (@text = '좋아요!' or . = '좋아요!')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m676 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m3 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m11 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m108 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m63 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m76 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m85 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m64 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m110 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m82 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m57 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m81 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m60 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m60 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m67 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m123 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m130 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m69 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m57 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m57 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m61 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m55 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m60 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m63 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m57 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m61 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m81 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m111 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m104 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m63 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m52 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/iv_banner']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m608 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m3 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m6 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m570 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m122 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m58 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m58 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m51 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m66 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m69 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m107 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m98 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m117 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m120 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m572 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m125 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m108 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m122 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m90 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m63 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m61 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m76 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m101 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m3 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m14 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/view_search_bar']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m153 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff000002c1/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff000002c1/location [39m[32m200[39m [90m8 ms - 77[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m3 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff000002c1/displayed[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff000002c1/displayed [39m[32m200[39m [90m20 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m1 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m22 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m123 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m62 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m57 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m162 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m100 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m124 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m61 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m95 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m1231 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m126 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m120 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m120 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m94 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m134 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m95 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_login']"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m131 ms - 12[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":30000}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts[39m
+[35m[HTTP][39m [90m{"implicit":50}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/timeouts [39m[32m200[39m [90m2 ms - 14[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/window/rect [39m[32m200[39m [90m17 ms - 50[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m179 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location [39m[32m200[39m [90m18 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m125 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location [39m[32m200[39m [90m14 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m103 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location [39m[32m200[39m [90m17 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m116 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location [39m[32m200[39m [90m8 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m123 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location [39m[32m200[39m [90m19 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m200[39m [90m156 ms - 139[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location[39m
+[35m[HTTP][39m [90m{}[39m
+[35m[W3C (428117f8)][39m Driver proxy active, passing request on via HTTP proxy
+[35m[WD Proxy][39m Replacing sessionId 9cb01de5-089c-43fb-9d67-8b0cdea2824c with 428117f8-6dd8-4605-9e8e-b864994acf01
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/element/00000000-0000-01d8-ffff-ffff00000240/location [39m[32m200[39m [90m8 ms - 79[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]"}[39m
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/428117f8-6dd8-4605-9e8e-b864994acf01/elements [39m[32m-[39m [90m- ms - -[39m
+[35m[HTTP][39m [90m[39m
+[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
+[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[35m[Appium][39m Removing session '428117f8-6dd8-4605-9e8e-b864994acf01' from our master session list
+[35m[UiAutomator2][39m Did not get confirmation UiAutomator2 deleteSession worked; Error was: UnknownError: An unknown server-side error occurred while processing the command. Original error: 'DELETE /' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+[35m[ADB][39m com.bbros.sayup was successfully uninstalled
+[35m[UiAutomator2][39m Restoring hidden api policy to the device default configuration

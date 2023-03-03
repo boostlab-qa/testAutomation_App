@@ -3,7 +3,7 @@
    <description>앱실행 > 알림 [허용]</description>
    <name>btn_permission_allow_alarm</name>
    <tag></tag>
-   <elementGuidId>c15a6670-d03f-44de-947c-6ee93300c8aa</elementGuidId>
+   <elementGuidId>39fcbd0d-8a4b-4a90-b7e2-8f5ee7356735</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>text</name>
       <type>Main</type>
       <value>허용</value>
-      <webElementGuid>7ef54a0e-0b7f-4b9b-9123-2968394b3435</webElementGuid>
+      <webElementGuid>a6cbec1a-e104-472a-ab82-af2ae05b7a33</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.android.permissioncontroller:id/permission_allow_button</value>
-      <webElementGuid>75a2cf63-5d61-457e-ba93-bc920cf36762</webElementGuid>
+      <webElementGuid>8ad9c670-0c0b-4455-847b-5b53b55a1459</webElementGuid>
    </webElementProperties>
    <locator>//*[(@text = '허용' or . = '허용') and @resource-id = 'com.android.permissioncontroller:id/permission_allow_button']</locator>
    <locatorStrategy>ATTRIBUTES</locatorStrategy>

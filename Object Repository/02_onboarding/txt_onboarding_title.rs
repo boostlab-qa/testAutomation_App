@@ -3,7 +3,7 @@
    <description>앱실행 > 권한 안내 > 온보딩 > 타이틀 문구</description>
    <name>txt_onboarding_title</name>
    <tag></tag>
-   <elementGuidId>f91ceea8-aee4-419c-819e-8875db23f99f</elementGuidId>
+   <elementGuidId>5ffe7d20-0397-4207-8390-a04b74db4649</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/iv_on_boarding_title</value>
-      <webElementGuid>787a0d99-f54d-4464-a5fd-2931d788c096</webElementGuid>
+      <value>com.bbros.sayup:id/iv_on_boarding_title</value>
+      <webElementGuid>60f563a4-bf98-421c-b989-873b9f8efbeb</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/iv_on_boarding_title']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/iv_on_boarding_title']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

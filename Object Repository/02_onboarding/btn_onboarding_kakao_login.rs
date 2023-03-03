@@ -3,7 +3,7 @@
    <description>앱실행 > 권한 안내 > 온보딩 > [카카오로 시작하기]</description>
    <name>btn_onboarding_kakao_login</name>
    <tag></tag>
-   <elementGuidId>c7683410-5ff4-4a33-bf85-b22b3e6428da</elementGuidId>
+   <elementGuidId>a3d38f34-1097-4ed1-a449-a045a0a5d638</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/commonBtnTitle</value>
-      <webElementGuid>60375f14-d15c-47de-a76b-ed09c77f83df</webElementGuid>
+      <value>com.bbros.sayup:id/commonBtnTitle</value>
+      <webElementGuid>f54da149-e054-4aef-8bf2-dac789f43ad8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>카카오로 시작하기</value>
-      <webElementGuid>0cba1e3e-0031-4a32-a7af-9dd12ac46991</webElementGuid>
+      <webElementGuid>ea5308fd-40e5-4ddf-b413-875add20713f</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/commonBtnTitle' and (@text = '카카오로 시작하기' or . = '카카오로 시작하기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/commonBtnTitle' and (@text = '카카오로 시작하기' or . = '카카오로 시작하기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
