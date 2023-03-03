@@ -3,7 +3,7 @@
    <description></description>
    <name>btn_home_qr</name>
    <tag></tag>
-   <elementGuidId>446ff617-830d-4418-ae2b-4ab310d76c98</elementGuidId>
+   <elementGuidId>dd4cc811-6d7e-4a9f-bbf2-1521b6709956</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/frame_qr</value>
-      <webElementGuid>69d64d20-40bb-4bb9-890c-2aee095eb6d2</webElementGuid>
+      <value>com.bbros.sayup:id/frame_qr</value>
+      <webElementGuid>226abad9-4ed3-4641-a2ca-4f683e82374a</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/frame_qr']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/frame_qr']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

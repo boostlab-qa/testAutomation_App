@@ -3,7 +3,7 @@
    <description>홈 > 상단 주소 영역</description>
    <name>area_home_constraint_address</name>
    <tag></tag>
-   <elementGuidId>d1b69b29-8aa1-45d7-9c3b-6e0818991162</elementGuidId>
+   <elementGuidId>b18097cd-43db-4d4c-9d97-e0e5aa3cd6d5</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/constraint_address</value>
-      <webElementGuid>4cc5f2bd-4fd9-45c4-bfa1-13e8f92e0f02</webElementGuid>
+      <value>com.bbros.sayup:id/constraint_address</value>
+      <webElementGuid>881a3388-7d0a-4672-9f6b-8e8d0720e2dd</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/constraint_address']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/constraint_address']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

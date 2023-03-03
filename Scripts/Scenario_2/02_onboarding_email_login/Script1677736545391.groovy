@@ -105,4 +105,7 @@ Mobile.verifyElementText(findTestObject('06_mypage/txt_mypage_title'), GlobalVar
 '기대결과 - 마이페이지 [수정] 버튼 노출'
 Mobile.verifyElementVisible(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+'STEP - 홈 메뉴 선택'
+Mobile.tap(findTestObject('04_home/txt_home_menu_home'), GlobalVariable.fixedTime)
+
 

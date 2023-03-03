@@ -3,7 +3,7 @@
    <description>홈 > 홈 메뉴 아이콘</description>
    <name>txt_home_menu_home</name>
    <tag></tag>
-   <elementGuidId>97d2fe4d-d38e-4254-bc74-8cbae5f9832e</elementGuidId>
+   <elementGuidId>3113606d-decd-49ea-ac1c-d612b6d16bf8</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tabName</value>
-      <webElementGuid>5d49fd65-d5e4-4f8f-8d27-e02b2830f974</webElementGuid>
+      <value>com.bbros.sayup:id/tabName</value>
+      <webElementGuid>7997982c-ec67-4db2-91ce-30d0912866ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>홈</value>
-      <webElementGuid>661c176c-2672-4322-b30a-bf47ade04340</webElementGuid>
+      <webElementGuid>8a62c08b-c332-450e-8bbf-62bf20514e21</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tabName' and (@text = '홈' or . = '홈')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '홈' or . = '홈')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

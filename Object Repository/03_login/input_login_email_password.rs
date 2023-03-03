@@ -3,7 +3,7 @@
    <description>로그인 > 이메일 로그인 > 패스워드</description>
    <name>input_login_email_password</name>
    <tag></tag>
-   <elementGuidId>812cf7d6-7dfc-484b-88e4-c10d2c0bcd31</elementGuidId>
+   <elementGuidId>53482c24-49a0-4bed-8c71-15606252fe09</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/etPassword</value>
-      <webElementGuid>8c1cdf23-57b1-4db8-94ba-f3e9ff1d39ec</webElementGuid>
+      <value>com.bbros.sayup:id/etPassword</value>
+      <webElementGuid>b6aa5ce9-7d52-4a7b-bc5c-5d5ae950662b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>비밀번호 입력</value>
-      <webElementGuid>83625a56-8bb5-4ff6-9a8c-0d1b5a19e668</webElementGuid>
+      <webElementGuid>31ceed79-1c42-49a0-9a7c-c23d1be59f49</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/etPassword' and (@text = '비밀번호 입력' or . = '비밀번호 입력')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/etPassword' and (@text = '비밀번호 입력' or . = '비밀번호 입력')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>로그인 > 이메일 로그인 화면 영역</description>
    <name>area_login_email</name>
    <tag></tag>
-   <elementGuidId>13003f5e-f687-40cb-90e5-496d6ae6d989</elementGuidId>
+   <elementGuidId>334eb59b-9c31-43db-8684-e5a83343d919</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/clLoginContainer</value>
-      <webElementGuid>593b05de-9da7-4296-86d4-e860fee558d0</webElementGuid>
+      <value>com.bbros.sayup:id/clLoginContainer</value>
+      <webElementGuid>2cc06d72-b482-4352-81f2-96c78a41a1e8</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/clLoginContainer']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/clLoginContainer']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

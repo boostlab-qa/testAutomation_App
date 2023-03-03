@@ -3,7 +3,7 @@
    <description>이메일 로그인 > 홈 > 카카오 연동 유도 바텀시트 > [오늘 하루 보지않기]</description>
    <name>btn_kakao_agree_skip</name>
    <tag></tag>
-   <elementGuidId>10ef67a0-8cde-4a26-83e8-d782e88533c8</elementGuidId>
+   <elementGuidId>5705f844-b05b-4d86-8ae5-f7da6ce40d81</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tvSkipBtn</value>
-      <webElementGuid>09ff8a32-fd5a-40a4-9e4e-60d9a301cd9a</webElementGuid>
+      <value>com.bbros.sayup:id/tvSkipBtn</value>
+      <webElementGuid>c33d0cf8-ab0c-467d-9fc7-456c4a53e38c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>오늘 하루 보지 않기</value>
-      <webElementGuid>65653856-8c83-43af-adfa-8d3677d42e7f</webElementGuid>
+      <webElementGuid>d74e880d-42c1-44a0-b661-950f104682ef</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvSkipBtn' and (@text = '오늘 하루 보지 않기' or . = '오늘 하루 보지 않기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvSkipBtn' and (@text = '오늘 하루 보지 않기' or . = '오늘 하루 보지 않기')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

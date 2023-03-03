@@ -3,7 +3,7 @@
    <description>홈 > 주소 아이콘</description>
    <name>icon_home_adress</name>
    <tag></tag>
-   <elementGuidId>7e7a5e18-2226-4e88-bfc3-b2d81efee6a7</elementGuidId>
+   <elementGuidId>2870d174-9f11-41d0-81e5-f9bacad11820</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/iv_icon</value>
-      <webElementGuid>8033f738-0b36-4625-9a99-b8a7199aa4a1</webElementGuid>
+      <value>com.bbros.sayup:id/iv_icon</value>
+      <webElementGuid>593f0ed0-feca-42ba-9e1d-e5d1b5006f53</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/iv_icon' and @resource-id = 'com.bbros.sayup.debug:id/tv_title']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/iv_icon']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

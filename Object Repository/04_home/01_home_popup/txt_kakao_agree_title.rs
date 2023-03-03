@@ -3,7 +3,7 @@
    <description>이메일 로그인 > 홈 > 카카오 연동 유도 바텀 시트 > 타이틀</description>
    <name>txt_kakao_agree_title</name>
    <tag></tag>
-   <elementGuidId>e9189813-001b-4c79-8ed0-760ac4aad710</elementGuidId>
+   <elementGuidId>f5ead197-4eeb-4612-92a7-428825b9c755</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tvTitle</value>
-      <webElementGuid>450a8d72-1291-4cbe-a7be-6916313b4fdc</webElementGuid>
+      <value>com.bbros.sayup:id/tvTitle</value>
+      <webElementGuid>a7f2a562-5a4b-4abb-ad18-f29d8b97c3f8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -22,9 +22,9 @@
       <value>이제부터 똑닥을
 카카오 계정으로
 이용해 보세요.</value>
-      <webElementGuid>e747a505-ec2a-4769-93ec-600fdd44faca</webElementGuid>
+      <webElementGuid>cce04e30-87e8-4819-80a1-22f55c0c5bbb</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tvTitle' and (@text = '이제부터 똑닥을
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvTitle' and (@text = '이제부터 똑닥을
 카카오 계정으로
 이용해 보세요.' or . = '이제부터 똑닥을
 카카오 계정으로

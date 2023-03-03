@@ -3,7 +3,7 @@
    <description></description>
    <name>btn_home_login</name>
    <tag></tag>
-   <elementGuidId>5ee46a2a-946e-49cf-b1ec-f6cacb0116ae</elementGuidId>
+   <elementGuidId>09fb0a68-4ed3-4614-955e-a66f7f96b1aa</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/btn_login</value>
-      <webElementGuid>1afd549b-5df3-4fb7-b881-f76500261f13</webElementGuid>
+      <value>com.bbros.sayup:id/btn_login</value>
+      <webElementGuid>d773063e-0a36-4caf-97c9-6b158ee12d97</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/btn_login']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/btn_login']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

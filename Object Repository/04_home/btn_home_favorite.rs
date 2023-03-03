@@ -3,7 +3,7 @@
    <description>홈 > [☆]</description>
    <name>btn_home_favorite</name>
    <tag></tag>
-   <elementGuidId>38adb070-b3fe-4f22-8953-a70bcd42f3eb</elementGuidId>
+   <elementGuidId>d6b6135c-cfcd-4e40-83a7-468214ec878e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/frame_favorite</value>
-      <webElementGuid>c3491512-9632-4075-b456-02ee3cc62810</webElementGuid>
+      <value>com.bbros.sayup:id/frame_favorite</value>
+      <webElementGuid>ac1ec630-c02e-467b-ba58-fa33dd0e0234</webElementGuid>
    </webElementProperties>
-   <locator></locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/frame_favorite']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

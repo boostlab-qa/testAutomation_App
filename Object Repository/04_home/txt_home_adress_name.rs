@@ -3,7 +3,7 @@
    <description>홈 > 주소 이름</description>
    <name>txt_home_adress_name</name>
    <tag></tag>
-   <elementGuidId>ce2f5377-fa19-45de-9804-92335b3dbaa1</elementGuidId>
+   <elementGuidId>e79b9cfc-8450-4b32-87d7-a02bf34690b0</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,9 +11,9 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tv_title</value>
-      <webElementGuid>3827cbee-91eb-4c8c-bfa2-64348a38abf9</webElementGuid>
+      <value>com.bbros.sayup:id/tv_title</value>
+      <webElementGuid>217b2ec3-0a01-43b9-92c3-33984a24b77c</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tv_title']</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -3,7 +3,7 @@
    <description>로그인 > 이메일 로그인 > ID</description>
    <name>input_login_email_id</name>
    <tag></tag>
-   <elementGuidId>9560a11f-1fd0-43ff-8016-5cededca1560</elementGuidId>
+   <elementGuidId>a03cbef6-c63a-4cad-a1de-f2fe12911837</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/etEmail</value>
-      <webElementGuid>93060cfa-ac70-426e-bd45-0493993e1ce3</webElementGuid>
+      <value>com.bbros.sayup:id/etEmail</value>
+      <webElementGuid>6e3e2a6c-5346-4175-9080-eb4e3b747d05</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>이메일 주소 입력</value>
-      <webElementGuid>c7d5435d-7b6e-4513-b804-7c0f4b3d775c</webElementGuid>
+      <webElementGuid>d185e13b-b4bc-4762-97ed-aa6d262d7bfa</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/etEmail' and (@text = '이메일 주소 입력' or . = '이메일 주소 입력')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/etEmail' and (@text = '이메일 주소 입력' or . = '이메일 주소 입력')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>

@@ -85,7 +85,7 @@ Mobile.tap(findTestObject('04_home/txt_home_menu_mypage'), GlobalVariable.fixedT
 Mobile.verifyElementText(findTestObject('06_mypage/txt_mypage_title'), GlobalVariable.user_name)
 
 '기대결과 - 마이페이지 [수정] 버튼 노출'
-Mobile.verifyElementText(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.user_name)
+Mobile.verifyElementVisible(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 

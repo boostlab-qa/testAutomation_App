@@ -3,7 +3,7 @@
    <description>홈 > [마이페이지] 메뉴</description>
    <name>txt_home_menu_mypage</name>
    <tag></tag>
-   <elementGuidId>372e60ca-ff80-4d70-ae6f-24ad656fe479</elementGuidId>
+   <elementGuidId>a0e79a8e-a056-4500-ad77-42d7df8ed04c</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,8 +11,8 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/tabName</value>
-      <webElementGuid>2ac78dc0-e992-46f8-b82a-68e26fe9716d</webElementGuid>
+      <value>com.bbros.sayup:id/tabName</value>
+      <webElementGuid>087a7a53-2a45-4f15-a995-8bf86f288106</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,8 +20,8 @@
       <name>text</name>
       <type>Main</type>
       <value>마이페이지</value>
-      <webElementGuid>1a0b2be2-623b-4263-ac86-761ec1cc0be9</webElementGuid>
+      <webElementGuid>29bf3a05-21e8-499c-8373-c93989e235de</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup.debug:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/tabName' and (@text = '마이페이지' or . = '마이페이지')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
