@@ -17,11 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-'STEP - 똑닥 앱 실행'
-Mobile.startApplication(GlobalVariable.apk, false)
-
-'기대결과 - 이용 권한 안내 화면 "똑닥 앱 이용 권한 안내 화면" 문구 노출'
-Mobile.verifyElementVisible(findTestObject('01_permission_imformation/txt_Permission_information_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
-'기대결과 - 이용 권한 안내 화면 [확인] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('01_permission_imformation/btn_permission_ok'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

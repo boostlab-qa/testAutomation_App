@@ -20,13 +20,7 @@ import org.openqa.selenium.Keys as Keys
 'STEP - 똑닥 앱 실행'
 Mobile.startApplication(GlobalVariable.apk, true)
 
-'STEP - 알림 팝업 노출 시 [허용] 선택' //예외처리
-if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime))
-{
-Mobile.tap(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime)
-}
-
-'STEP - [확인] 버튼 선택'
+'STEP - 이용 권한 안내 화면 [확인] 버튼 선택'
 Mobile.tap(findTestObject('01_permission_imformation/btn_permission_ok'), GlobalVariable.fixedTime)
 
 'STEP - 기기 액세스 팝업 노출 시 (위치/전화) 허용 선택' //예외처리
@@ -58,9 +52,6 @@ Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_easy_login'), Glob
 if(Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime))
 {
 	Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
-	
-	'마케팅 수신 동의 시 true 값 적용'
-	GlobalVariable.maketing = true
 }
 
 'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
