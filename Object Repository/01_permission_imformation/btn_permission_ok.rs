@@ -3,7 +3,7 @@
    <description>앱 실행 > 이용 권한 안내 화면 > [확인]</description>
    <name>btn_permission_ok</name>
    <tag></tag>
-   <elementGuidId>ce3f1f67-26d9-461e-8a18-d433e3be7bf5</elementGuidId>
+   <elementGuidId>f9d83ab0-0cef-4fac-be88-7e3e5a9f9ed6</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,16 +12,16 @@
       <name>text</name>
       <type>Main</type>
       <value>확인</value>
-      <webElementGuid>4715764b-2120-424f-a1eb-030fffb09ad3</webElementGuid>
+      <webElementGuid>6421f8fb-8ddc-45df-a4c1-ec2fd7b6300a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup.debug:id/confirmBtn</value>
-      <webElementGuid>2b46f3f0-07f6-4d54-9a17-95b9a56dd20d</webElementGuid>
+      <value>com.bbros.sayup:id/confirmBtn</value>
+      <webElementGuid>c4ccfacf-782c-482c-b873-5dae5f670ca8</webElementGuid>
    </webElementProperties>
-   <locator>//*[(@text = '확인' or . = '확인') and @resource-id = 'com.bbros.sayup.debug:id/confirmBtn']</locator>
+   <locator>//*[(@text = '확인' or . = '확인') and @resource-id = 'com.bbros.sayup:id/confirmBtn']</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
