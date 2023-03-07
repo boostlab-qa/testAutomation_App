@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>앱 실행 > 권한 안내 > 온보딩 > 카카오 로그인 > 홈</description>
    <name>01_onboarding_kakao_login</name>
    <tag></tag>
    <comment></comment>

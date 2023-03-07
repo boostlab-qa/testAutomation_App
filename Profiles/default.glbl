@@ -34,4 +34,14 @@
       <initValue>'qwer1234!'</initValue>
       <name>email_password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>자동화 게정 (기록o)</description>
+      <initValue>'qa22@qa.com'</initValue>
+      <name>email_id_22</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>자동화 계정 (기록x)</description>
+      <initValue>'qa21@qa.com'</initValue>
+      <name>email_id_21</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

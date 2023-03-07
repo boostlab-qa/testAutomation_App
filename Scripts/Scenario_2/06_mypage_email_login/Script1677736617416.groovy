@@ -82,7 +82,6 @@ if (Mobile.waitForElementNotPresent(findTestObject('04_home/btn_home_login'), Gl
 	
 	'STEP - 로그아웃 [확인] 버튼 선택'
 	Mobile.tap(findTestObject('06_mypage/btn_mypage_edit_logout_confirm'), GlobalVariable.fixedTime)
-	
 }
 
 'STEP - 홈 마이페이지 메뉴 선택'
@@ -102,6 +101,16 @@ Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_kakao_l
 
 '기대결과 - 로그인 화면 [이메일 로그인] 버튼 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 로그인 화면 [x] 버튼 선택'
+Mobile.tap(findTestObject('03_login/btn_login_close'), GlobalVariable.fixedTime)
+
+'기대결과 - 마이페이지 타이틀, [로그인] 버튼 노출'
+Mobile.verifyElementVisible(findTestObject('06_mypage/txt_mypage_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('06_mypage/btn_mypage_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 마이페이지 [로그인] 버튼 선택'
+Mobile.tap(findTestObject('06_mypage/btn_mypage_login'), GlobalVariable.fixedTime)
 
 'STEP - 로그인 화면 [이메일 로그인] 버튼 선택'
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)

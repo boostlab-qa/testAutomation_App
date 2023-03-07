@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description></description>
+   <description>홈 > [QR]</description>
    <name>btn_home_qr</name>
    <tag></tag>
    <elementGuidId>dd4cc811-6d7e-4a9f-bbf2-1521b6709956</elementGuidId>

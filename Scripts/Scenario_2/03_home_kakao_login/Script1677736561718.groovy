@@ -103,6 +103,15 @@ Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_kakao_l
 '기대결과 - 로그인 화면 [이메일 로그인] 버튼 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+'STEP - 로그인 화면 [x] 버튼 선택'
+Mobile.tap(findTestObject('03_login/btn_login_close'), GlobalVariable.fixedTime)
+
+'기대결과 - 홈 화면 (로그인 유도 영역) 노출'
+Mobile.verifyElementVisible(findTestObject('04_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
+Mobile.tap(findTestObject('04_home/btn_home_login'), GlobalVariable.fixedTime)
+
 'STEP - 로그인 화면 [카카오로 시작하기] 버튼 선택'
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_login'), GlobalVariable.fixedTime)
 

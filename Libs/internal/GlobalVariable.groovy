@@ -39,6 +39,16 @@ public class GlobalVariable {
      */
     public static Object email_password
      
+    /**
+     * <p>Profile default : &#51088;&#46041;&#54868; &#44172;&#51221; (&#44592;&#47197;o)</p>
+     */
+    public static Object email_id_22
+     
+    /**
+     * <p>Profile default : &#51088;&#46041;&#54868; &#44228;&#51221; (&#44592;&#47197;x)</p>
+     */
+    public static Object email_id_21
+     
 
     static {
         try {
@@ -52,6 +62,8 @@ public class GlobalVariable {
             user_name = selectedVariables['user_name']
             email_id = selectedVariables['email_id']
             email_password = selectedVariables['email_password']
+            email_id_22 = selectedVariables['email_id_22']
+            email_id_21 = selectedVariables['email_id_21']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

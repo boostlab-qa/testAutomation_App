@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>앱 실행 > 홈 > 로그인 > 홈</description>
+   <name>01_home_login_config</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0169f6f5-5177-491c-814a-6ae5b5df0c8f</testCaseGuid>
+</TestCaseEntity>
