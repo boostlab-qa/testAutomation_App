@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>앱 실행 > 홈 > 마이페이지 > 이메일 로그인</description>
    <name>06_mypage_email_login</name>
    <tag></tag>
    <comment></comment>

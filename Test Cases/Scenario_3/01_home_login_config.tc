@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>앱 실행 > 홈 > 로그인 > 홈</description>
    <name>01_home_login_config</name>
    <tag></tag>
    <comment></comment>

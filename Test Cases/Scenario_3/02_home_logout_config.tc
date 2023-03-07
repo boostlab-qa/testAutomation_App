@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>앱 실행 > 홈 > 마이페이지 > 로그아웃 > 홈</description>
    <name>02_home_logout_config</name>
    <tag></tag>
    <comment></comment>

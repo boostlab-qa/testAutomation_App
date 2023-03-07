@@ -51,7 +51,7 @@ if(Mobile.waitForElementPresent(findTestObject('04_home/area_home_login'), Globa
 '기대결과 - 홈 주소 아이콘 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/icon_home_adress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'기대결과 - 홈 주소 이름 노출'
+'기대결과 - 홈 주소 이름 영역 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 주소 펼치기 [v] 버튼 노출'
@@ -74,7 +74,7 @@ Mobile.verifyElementVisible(findTestObject('04_home/txt_home_search_title'), Glo
 
 //'기대결과 - 홈 상단 배너 노출'
 //Mobile.verifyElementVisible(findTestObject('04_home/area_home_top_banner'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-
+//
 //'기대결과 - 홈 상단 배너 인디케이터 노출'
 //Mobile.verifyElementVisible(findTestObject('04_home/area_home_top_banner_indicator'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 

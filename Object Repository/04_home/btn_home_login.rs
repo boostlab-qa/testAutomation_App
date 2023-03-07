@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description></description>
+   <description>홈 > 로그인 유도 영역 > [시작하기]</description>
    <name>btn_home_login</name>
    <tag></tag>
    <elementGuidId>09fb0a68-4ed3-4614-955e-a66f7f96b1aa</elementGuidId>
