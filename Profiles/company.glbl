@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GlobalVariableEntities>
    <description></description>
-   <name>default</name>
+   <name>company</name>
    <tag></tag>
-   <defaultProfile>true</defaultProfile>
+   <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description>앱ID</description>
       <initValue>'com.bbros.sayup'</initValue>
@@ -46,12 +46,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>집 주소</description>
-      <initValue>'경기 부천시 부흥로 49 (상동, 백송마을)  (14591)'</initValue>
+      <initValue>'서울 영등포구 여의대로 108 (여의도동)'</initValue>
       <name>my_adress</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>집 주소 </description>
-      <initValue>'상동'</initValue>
+      <description>집 상세주소</description>
+      <initValue>'31층'</initValue>
+      <name>my_adress_detail</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>회사 주소</description>
+      <initValue>'여의도동'</initValue>
       <name>location</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

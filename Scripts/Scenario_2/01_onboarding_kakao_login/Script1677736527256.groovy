@@ -23,13 +23,6 @@ Mobile.startApplication(GlobalVariable.apk, true)
 'STEP - 이용 권한 안내 화면 [확인] 버튼 선택'
 Mobile.tap(findTestObject('01_permission_imformation/btn_permission_ok'), GlobalVariable.fixedTime)
 
-'STEP - 기기 액세스 팝업 노출 시 (위치/전화) 허용 선택' //예외처리
-if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime))
-{
-	Mobile.tap(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime)  //위치 액세스
-	Mobile.tap(findTestObject('01_permission_imformation/btn_permission_call_allow'), GlobalVariable.fixedTime)  //전화 액세스
-}
-
 '기대결과 - 온보딩 화면 타이틀 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -47,18 +40,6 @@ Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_login'), GlobalVar
 
 'STEP - [카카오톡으로 간편로그인] 버튼 선택'
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_easy_login'), GlobalVariable.fixedTime)
-
-'마케팅 수신 동의 팝업 노출 시 [좋아요!] 선택 '
-if(Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime))
-{
-	Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
-}
-
-'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
-if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
-{
-		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
-}
 
 '기대결과 - 홈 주소 영역 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

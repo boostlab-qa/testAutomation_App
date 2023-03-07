@@ -20,56 +20,6 @@ import org.openqa.selenium.Keys as Keys
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-//앱 데이터 삭제 시 주석 해제
-
-//'STEP - 알림 팝업 노출 시 [허용] 선택'
-//if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime))
-//{
-//Mobile.tap(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime)
-//}
-//
-//'STEP - 권한안내 화면 노출 시 온보딩 스킵'
-//if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/txt_Permission_information_title'), GlobalVariable.fixedTime))
-//{
-//	'STEP - 권한안내 [확인] 버튼 선택'
-//	Mobile.tap(findTestObject('01_permission_imformation/btn_permission_ok'), GlobalVariable.fixedTime)
-//
-//	'STEP - 기기 액세스 팝업 노출 시 (위치/전화) 허용 선택'
-//	if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime))
-//	{
-//		Mobile.tap(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime)  //위치 액세스
-//		Mobile.tap(findTestObject('01_permission_imformation/btn_permission_call_allow'), GlobalVariable.fixedTime)  //전화 액세스
-//
-//	'STEP - 온보딩 [둘러보기] 선택'
-//	Mobile.tap(findTestObject('02_onboarding/btn_onboarding_skip'), GlobalVariable.fixedTime)
-//	}
-//
-//	'마케팅 수신 동의 팝업 노출 시 [좋아요!] 선택 '
-//	if(Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime))
-//	{
-//		Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
-//	}
-//
-//	'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
-//	if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
-//	{
-//		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
-//	}
-//}
-//
-//
-//'마케팅 수신 동의 팝업 노출 시 [좋아요!] 선택 '
-//if(Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime))
-//{
-//	Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
-//}
-
-'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
-if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
-{
-		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
-}
-
 'STEP - 이미 로그인된 경우 로그아웃 진행'
 if (Mobile.waitForElementNotPresent(findTestObject('04_home/btn_home_login'), GlobalVariable.fixedTime))
 {

@@ -1,3 +1,5 @@
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
@@ -37,8 +39,8 @@ Mobile.verifyElementVisible(findTestObject('01_permission_imformation/btn_permis
 Mobile.verifyElementVisible(findTestObject('01_permission_imformation/btn_permission_location_allow_one_time'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 Mobile.verifyElementVisible(findTestObject('01_permission_imformation/btn_permission_location_deny'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
-'STEP - 기기 위치 액세스 허용 선택'
-Mobile.tap(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime)
+'STEP - 기기 위치 액세스 허용안함 선택'
+Mobile.tap(findTestObject('01_permission_imformation/btn_permission_location_deny'), GlobalVariable.fixedTime)
 
 '기대결과 - 기기 전화 액세스 허용 팝업 노출'
 Mobile.verifyElementVisible(findTestObject('01_permission_imformation/txt_permission_call_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -72,14 +74,31 @@ Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_maketing_c
 'STEP - [좋아요!] 선택'
 Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
 
-'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
+'STEP - 이벤트 팝업 노출 시 [오늘 그만 보기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
 if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
 {
 		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
 }
-	
-'기대결과 - 홈 화면 비로그인 상태 노출'
+
+'기대결과 - 주소 설정 영역 주소이름 {역삼동} 노출'
+Mobile.verifyElementText(findTestObject('04_home/txt_home_adress_name'), '역삼동', FailureHandling.STOP_ON_FAILURE)
+
+'기대결과 - 홈 주소 영역 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 홈 검색 바 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 홈 로그인 유도 영역 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 위치 정보 제공동의 영역 노출'
+Mobile.verifyElementVisible(findTestObject('04_home/area_home_location_access'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+
+
+
+
+
+
 //

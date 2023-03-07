@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>홈 > 이벤트 팝업 > [닫기]</description>
-   <name>btn_event_close</name>
+   <description>홈 > 주소설정 > [편집]</description>
+   <name>btn_edit</name>
    <tag></tag>
-   <elementGuidId>a5697fa0-42c6-447a-b9c6-60dca605b392</elementGuidId>
+   <elementGuidId>b110769d-124f-4893-b65e-1fae328e1e1d</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,17 +11,17 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_not_show_today</value>
-      <webElementGuid>e2d4af13-77cb-4dbc-a22f-a96ab66573f6</webElementGuid>
+      <value>com.bbros.sayup:id/tvOption</value>
+      <webElementGuid>3328a54d-4e0b-4164-9455-1fcbb0e2b3ce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>오늘 그만 보기</value>
-      <webElementGuid>bfeef746-5e6b-450b-a4a4-01178b716360</webElementGuid>
+      <value>편집</value>
+      <webElementGuid>4d5dc7a1-ee1d-48be-938a-875a27e2c449</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_not_show_today' and (@text = '오늘 그만 보기' or . = '오늘 그만 보기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/tvOption' and (@text = '편집' or . = '편집')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
