@@ -24,6 +24,31 @@ public class GlobalVariable {
      */
     public static Object apk
      
+    /**
+     * <p></p>
+     */
+    public static Object user_name
+     
+    /**
+     * <p>Profile default : &#51060;&#47700;&#51068; &#50500;&#51060;&#46356;</p>
+     */
+    public static Object email_id
+     
+    /**
+     * <p>Profile default : &#51060;&#47700;&#51068; &#54056;&#49828;&#50892;&#46300;</p>
+     */
+    public static Object email_password
+     
+    /**
+     * <p>Profile default : &#51088;&#46041;&#54868; &#44172;&#51221; (&#44592;&#47197;o)</p>
+     */
+    public static Object email_id_22
+     
+    /**
+     * <p>Profile default : &#51088;&#46041;&#54868; &#44228;&#51221; (&#44592;&#47197;x)</p>
+     */
+    public static Object email_id_21
+     
 
     static {
         try {
@@ -34,6 +59,11 @@ public class GlobalVariable {
             appid = selectedVariables['appid']
             fixedTime = selectedVariables['fixedTime']
             apk = selectedVariables['apk']
+            user_name = selectedVariables['user_name']
+            email_id = selectedVariables['email_id']
+            email_password = selectedVariables['email_password']
+            email_id_22 = selectedVariables['email_id_22']
+            email_id_21 = selectedVariables['email_id_21']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

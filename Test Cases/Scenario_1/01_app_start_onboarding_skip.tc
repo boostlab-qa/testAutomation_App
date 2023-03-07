@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>앱 실행 > 권한 안내 > 허용 > 온보딩 > [둘러보기] 선택 > 홈</description>
+   <name>01_app_start_onboarding_skip</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>525952a0-86d8-4816-b34c-5c93ac750579</testCaseGuid>
+</TestCaseEntity>

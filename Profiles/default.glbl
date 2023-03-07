@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>앱ID</description>
-      <initValue>'com.bbros.sayup.debug'</initValue>
+      <initValue>'com.bbros.sayup'</initValue>
       <name>appid</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -16,7 +16,32 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>apk path</description>
-      <initValue>'C:\\apk\\app-debug.apk'</initValue>
+      <initValue>'C:\\apk\\real_9_7_4.apk'</initValue>
       <name>apk</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'박명근'</initValue>
+      <name>user_name</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>이메일 아이디</description>
+      <initValue>'qa20@qa.com'</initValue>
+      <name>email_id</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>이메일 패스워드</description>
+      <initValue>'qwer1234!'</initValue>
+      <name>email_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>자동화 게정 (기록o)</description>
+      <initValue>'qa22@qa.com'</initValue>
+      <name>email_id_22</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>자동화 계정 (기록x)</description>
+      <initValue>'qa21@qa.com'</initValue>
+      <name>email_id_21</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
