@@ -19,42 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
-
-'STEP - 로그인 상태인 경우 로그아웃 진행'
-if (Mobile.waitForElementNotPresent(findTestObject('05_home/btn_home_login'), GlobalVariable.fixedTime))
-{
-	'STEP - 홈 마이페이지 메뉴 선택'
-	Mobile.tap(findTestObject('05_home/txt_home_menu_mypage'), GlobalVariable.fixedTime)
-	
-	'STEP - [수정] 버튼 선택'
-	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime)
-	
-	'STEP - [로그아웃] 버튼 선택'
-	Mobile.tap(findTestObject('07_mypage/btn_mapage_edit_logout'), GlobalVariable.fixedTime)
-	
-	'STEP - 로그아웃 [확인] 버튼 선택'
-	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit_logout_confirm'), GlobalVariable.fixedTime)
-	
-	'STEP - 홈 메뉴 선택'
-	Mobile.tap(findTestObject('05_home/txt_home_menu_home'), GlobalVariable.fixedTime)
-}
-
-//qa22 이메일 계정 로그인
-'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
-Mobile.tap(findTestObject('05_home/btn_home_login'), GlobalVariable.fixedTime)
-	
-'STEP - 로그인 화면 [이메일 로그인] 버튼 선택'
-Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
-	
-'STEP - 이메일 id 입력'
-Mobile.setText(findTestObject('03_login/input_login_email_id'), GlobalVariable.email_id, GlobalVariable.fixedTime)
-	
-'STEP - 이메일 password 입력'
-Mobile.setText(findTestObject('03_login/input_login_email_password'), GlobalVariable.email_password, GlobalVariable.fixedTime)
-	
-'STEP - [로그인하기] 버튼 선택'
-Mobile.tap(findTestObject('03_login/btn_login_email_confirm'), GlobalVariable.fixedTime)
-//
 		
 'STEP - 홈 > 주소이름 선택'
 Mobile.tap(findTestObject('05_home/txt_home_adress_name'), GlobalVariable.fixedTime)
@@ -85,11 +49,13 @@ Mobile.verifyElementText(findTestObject('04_adress_setting/area_my_home_adress')
 Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
+
+
+
 'STEP - [현위치에서 병원 찾기] 버튼 선택'
 Mobile.tap(findTestObject('05_home/txt_home_adress_name'), GlobalVariable.fixedTime)
 
-'기대결과 - [다른 위치에서 병원 찾기] 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
 
 
 
