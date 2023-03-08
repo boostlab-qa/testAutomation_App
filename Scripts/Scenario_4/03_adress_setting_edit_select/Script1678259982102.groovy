@@ -52,6 +52,7 @@ Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_different_loca
 
 
 
+
 'STEP - [현위치에서 병원 찾기] 버튼 선택'
 Mobile.tap(findTestObject('05_home/txt_home_adress_name'), GlobalVariable.fixedTime)
 
