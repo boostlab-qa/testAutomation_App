@@ -66,39 +66,49 @@ Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_email_l
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_skip'), GlobalVariable.fixedTime)
 
 '기대결과 - 마케팅 정보 수신 동의 팝업 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/txt_maketing_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/img_maketing_character'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_maketing_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/txt_maketing_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/img_maketing_character'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/btn_maketing_cancel'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [좋아요!] 선택'
-Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
 
 'STEP - 이벤트 팝업 노출 시 [오늘 그만 보기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
-if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementPresent(findTestObject('05_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
 {
-		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
+		Mobile.tap(findTestObject('05_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
 }
 
-'기대결과 - 주소 설정 영역 주소이름 {역삼동} 노출'
-Mobile.verifyElementText(findTestObject('04_home/txt_home_adress_name'), '역삼동', FailureHandling.STOP_ON_FAILURE)
+'기대결과 - 주소 설정 영역 주소이름 "역삼동" 노출'
+Mobile.verifyElementText(findTestObject('05_home/txt_home_adress_name'), '역삼동', FailureHandling.STOP_ON_FAILURE)
 
 '기대결과 - 홈 주소 영역 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 바 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 로그인 유도 영역 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 위치 정보 제공동의 영역 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/area_home_location_access'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_home_location_access'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
+'STEP - 위치 정보 제공동의 영역 선택'
+Mobile.tap(findTestObject('05_home/area_home_location_access'), GlobalVariable.fixedTime)
 
+'STEP - 위치 정보 제공동의 [확인] 버튼 선택'
+Mobile.tap(findTestObject('00_common/btn_popup_confirm'), GlobalVariable.fixedTime)
 
+'STEP - 위치 액세스 허용'
+Mobile.tap(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime)
 
+'기대결과 - 주소 설정 영역 주소이름 {현위치} 노출'
+Mobile.verifyElementText(findTestObject('05_home/txt_home_adress_name'), GlobalVariable.location, FailureHandling.STOP_ON_FAILURE)
 
+'기대결과 - 주소 설정 영역 주소이름 {현위치} 노출'
+Mobile.verifyElementText(findTestObject('05_home/txt_home_adress_name'), GlobalVariable.location, FailureHandling.STOP_ON_FAILURE)
 
-
-//
+'기대결과 - 위치 정보 제공동의 영역 미노출'
+Mobile.verifyElementNotVisible(findTestObject('05_home/area_home_location_access'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

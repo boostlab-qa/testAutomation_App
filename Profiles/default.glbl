@@ -46,12 +46,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>집 주소</description>
-      <initValue>'경기 부천시 부흥로 49 (상동, 백송마을)  (14591)'</initValue>
+      <initValue>'경기 부천시 부흥로 49 (상동, 백송마을) '</initValue>
       <name>my_adress</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>집 주소 </description>
       <initValue>'상동'</initValue>
       <name>location</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>우편번호</description>
+      <initValue>'(14591)'</initValue>
+      <name>zip_code</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

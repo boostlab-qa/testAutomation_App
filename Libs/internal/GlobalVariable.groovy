@@ -69,6 +69,12 @@ Profile company : &#54924;&#49324; &#51452;&#49548;</p>
     public static Object location
      
     /**
+     * <p>Profile default : &#50864;&#54200;&#48264;&#54840;
+Profile company : &#50864;&#54200;&#48264;&#54840;</p>
+     */
+    public static Object zip_code
+     
+    /**
      * <p>Profile company : &#51665; &#49345;&#49464;&#51452;&#49548;</p>
      */
     public static Object my_adress_detail
@@ -90,6 +96,7 @@ Profile company : &#54924;&#49324; &#51452;&#49548;</p>
             email_id_21 = selectedVariables['email_id_21']
             my_adress = selectedVariables['my_adress']
             location = selectedVariables['location']
+            zip_code = selectedVariables['zip_code']
             my_adress_detail = selectedVariables['my_adress_detail']
             
         } catch (Exception e) {

@@ -22,7 +22,7 @@
       <guid>be6d81ce-f997-4ae9-9d1d-71a3cfb4de46</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Scenario_4/01_adress_setting_page</testCaseId>
+      <testCaseId>Test Cases/Scenario_4/01_adress_setting_first_page</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

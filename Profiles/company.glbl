@@ -59,4 +59,9 @@
       <initValue>'여의도동'</initValue>
       <name>location</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>우편번호</description>
+      <initValue>'(07335)'</initValue>
+      <name>zip_code</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
