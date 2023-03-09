@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>홈 > 찜한목록 페이지 진입</description>
+   <name>01_favorites_page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3d3ba8f-96ef-4dfd-9dbe-b5336f443133</testCaseGuid>
+</TestCaseEntity>
