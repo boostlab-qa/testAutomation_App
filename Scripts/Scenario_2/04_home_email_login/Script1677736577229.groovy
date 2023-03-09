@@ -20,75 +20,27 @@ import org.openqa.selenium.Keys as Keys
 'STEP - 똑닥 앱 실행'
 Mobile.startExistingApplication(GlobalVariable.appid)
 
-//'STEP - 알림 팝업 노출 시 [허용] 선택'
-//if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime))
-//{
-//Mobile.tap(findTestObject('01_permission_imformation/btn_permission_allow_alarm'), GlobalVariable.fixedTime)
-//}
-
-//'STEP - 권한안내 화면 노출 시 온보딩 스킵'
-//if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/txt_Permission_information_title'), GlobalVariable.fixedTime))
-//{
-//	'STEP - 권한안내 [확인] 버튼 선택'
-//	Mobile.tap(findTestObject('01_permission_imformation/btn_permission_ok'), GlobalVariable.fixedTime)
-//	
-//	'STEP - 기기 액세스 팝업 노출 시 (위치/전화) 허용 선택'
-//	if(Mobile.waitForElementPresent(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime))
-//	{
-//		Mobile.tap(findTestObject('01_permission_imformation/btn_permission_location_allow_foreground_only'), GlobalVariable.fixedTime)  //위치 액세스
-//		Mobile.tap(findTestObject('01_permission_imformation/btn_permission_call_allow'), GlobalVariable.fixedTime)  //전화 액세스
-//		
-//	'STEP - 온보딩 [둘러보기] 선택'
-//	Mobile.tap(findTestObject('02_onboarding/btn_onboarding_skip'), GlobalVariable.fixedTime)
-//	}
-//	
-//	'마케팅 수신 동의 팝업 노출 시 [좋아요!] 선택 '
-//	if(Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime))
-//	{
-//		Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
-//	}
-//	
-//	'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
-//	if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
-//	{
-//		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
-//	}
-//}
-//
-//
-//'마케팅 수신 동의 팝업 노출 시 [좋아요!] 선택 '
-//if(Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime))
-//{
-//	Mobile.tap(findTestObject('04_home/01_home_popup/btn_maketing_common'), GlobalVariable.fixedTime)
-//}
-
-'STEP - 이벤트 팝업 노출 시 [닫기] 선택' //이벤트 팝업은 메인 1개만 노출됩니다.
-if (Mobile.waitForElementPresent(findTestObject('04_home/01_home_popup/img_event_banner'), GlobalVariable.fixedTime))
-{
-		Mobile.tap(findTestObject('04_home/01_home_popup/btn_event_close'), GlobalVariable.fixedTime)
-}
-
 'STEP - 이미 로그인된 경우 로그아웃 진행'
-if (Mobile.waitForElementNotPresent(findTestObject('04_home/btn_home_login'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementNotPresent(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime))
 {
 	'STEP - 홈 마이페이지 메뉴 선택'
-	Mobile.tap(findTestObject('04_home/txt_home_menu_mypage'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 	
 	'STEP - [수정] 버튼 선택'
-	Mobile.tap(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime)
 	
 	'STEP - [로그아웃] 버튼 선택'
-	Mobile.tap(findTestObject('06_mypage/btn_mapage_edit_logout'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('07_mypage/btn_mapage_edit_logout'), GlobalVariable.fixedTime)
 	
 	'STEP - 로그아웃 [확인] 버튼 선택'
-	Mobile.tap(findTestObject('06_mypage/btn_mypage_edit_logout_confirm'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit_logout_confirm'), GlobalVariable.fixedTime)
 	
 	'STEP - 홈 메뉴 선택'
-	Mobile.tap(findTestObject('04_home/txt_home_menu_home'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)
 }
 
 'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
-Mobile.tap(findTestObject('04_home/btn_home_login'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime)
 
 '기대결과 - 로그인 화면 타이틀 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -106,16 +58,47 @@ Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_email_l
 Mobile.tap(findTestObject('03_login/btn_login_close'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 화면 (로그인 유도 영역) 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
-Mobile.tap(findTestObject('04_home/btn_home_login'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime)
 
 'STEP - 로그인 화면 [이메일 로그인] 버튼 선택'
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
 
-'기대결과 - 이메일 로그인 화면 노출'
-Mobile.verifyElementVisible(findTestObject('03_login/area_login_email'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//이메일 로그인 화면
+'기대결과 - 이메일 로그인 화면 타이틀 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/txt_email_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 [x] 버튼 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/btn_email_close'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 "이메일" 문구 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/txt_email_login_email'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 이메일 주소 input 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/input_login_email_id'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 "비밀번호" 문구 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/txt_email_login_password'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 패스워드 input 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/input_login_email_password'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 "이메일 / 비밀번호 찾기" 문구 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/email_login_find_email_password'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//
+
+//뒤로가기 페이지 이동
+'STEP - 닫기 [x] 버튼 선택'
+Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
+
+'기대결과 - 로그인 화면 타이틀 노출'
+Mobile.verifyElementVisible(findTestObject('02_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//
+
+'STEP - 로그인 화면 [이메일 로그인] 버튼 선택'
+Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
 
 'STEP - 이메일 id 입력'
 Mobile.setText(findTestObject('03_login/input_login_email_id'), GlobalVariable.email_id, GlobalVariable.fixedTime)
@@ -126,35 +109,23 @@ Mobile.setText(findTestObject('03_login/input_login_email_password'), GlobalVari
 'STEP - [로그인하기] 버튼 선택'
 Mobile.tap(findTestObject('03_login/btn_login_email_confirm'), GlobalVariable.fixedTime)
 
-//'기대결과 - 카카오 연동 유도 바텀시트 타이틀 노출'
-//Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/txt_kakao_agree_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//'기대결과 - 카카오 연동 유도 바텀시트 [동의하고 계속하기] 버튼 노출'
-//Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_kakao_agree_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//'기대결과 - 카카오 연동 유도 바텀시트 [오늘 하루 보지 않기] 버튼 노출'
-//Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_kakao_agree_skip'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//'STEP - [오늘 하루 보지 않기] 버튼 선택'
-//Mobile.tap(findTestObject('04_home/01_home_popup/btn_kakao_agree_skip'), GlobalVariable.fixedTime)
-
 '기대결과 - 홈 주소 영역 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 영역 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 로그인 유도 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('04_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP- [마이페이지] 메뉴 선택'
-Mobile.tap(findTestObject('04_home/txt_home_menu_mypage'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 
 '기대결과 - 마이페이지 타이틀 {이름} 확인 노출'
-Mobile.verifyElementText(findTestObject('06_mypage/txt_mypage_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 마이페이지 [수정] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 메뉴 선택'
-Mobile.tap(findTestObject('04_home/txt_home_menu_home'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)

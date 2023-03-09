@@ -10,17 +10,20 @@ import com.kms.katalon.core.main.TestCaseMain
 public class GlobalVariable {
      
     /**
-     * <p>Profile default : &#50545;ID</p>
+     * <p>Profile default : &#50545;ID
+Profile company : &#50545;ID</p>
      */
     public static Object appid
      
     /**
-     * <p>Profile default : &#44256;&#51221;&#46108; &#49884;&#44036;</p>
+     * <p>Profile default : &#44256;&#51221;&#46108; &#49884;&#44036;
+Profile company : &#44256;&#51221;&#46108; &#49884;&#44036;</p>
      */
     public static Object fixedTime
      
     /**
-     * <p>Profile default : apk path</p>
+     * <p>Profile default : apk path
+Profile company : apk path</p>
      */
     public static Object apk
      
@@ -30,24 +33,51 @@ public class GlobalVariable {
     public static Object user_name
      
     /**
-     * <p>Profile default : &#51060;&#47700;&#51068; &#50500;&#51060;&#46356;</p>
+     * <p>Profile default : &#51060;&#47700;&#51068; &#50500;&#51060;&#46356;
+Profile company : &#51060;&#47700;&#51068; &#50500;&#51060;&#46356;</p>
      */
     public static Object email_id
      
     /**
-     * <p>Profile default : &#51060;&#47700;&#51068; &#54056;&#49828;&#50892;&#46300;</p>
+     * <p>Profile default : &#51060;&#47700;&#51068; &#54056;&#49828;&#50892;&#46300;
+Profile company : &#51060;&#47700;&#51068; &#54056;&#49828;&#50892;&#46300;</p>
      */
     public static Object email_password
      
     /**
-     * <p>Profile default : &#51088;&#46041;&#54868; &#44172;&#51221; (&#44592;&#47197;o)</p>
+     * <p>Profile default : &#51088;&#46041;&#54868; &#44172;&#51221; (&#44592;&#47197;o)
+Profile company : &#51088;&#46041;&#54868; &#44172;&#51221; (&#44592;&#47197;o)</p>
      */
     public static Object email_id_22
      
     /**
-     * <p>Profile default : &#51088;&#46041;&#54868; &#44228;&#51221; (&#44592;&#47197;x)</p>
+     * <p>Profile default : &#51088;&#46041;&#54868; &#44228;&#51221; (&#44592;&#47197;x)
+Profile company : &#51088;&#46041;&#54868; &#44228;&#51221; (&#44592;&#47197;x)</p>
      */
     public static Object email_id_21
+     
+    /**
+     * <p>Profile default : &#51665; &#51452;&#49548;
+Profile company : &#51665; &#51452;&#49548;</p>
+     */
+    public static Object my_adress
+     
+    /**
+     * <p>Profile default : &#51452;&#49548; &#51060;&#47492;
+Profile company : &#54924;&#49324; &#51452;&#49548;</p>
+     */
+    public static Object adress_name
+     
+    /**
+     * <p>Profile default : &#50864;&#54200;&#48264;&#54840;
+Profile company : &#50864;&#54200;&#48264;&#54840;</p>
+     */
+    public static Object zip_code
+     
+    /**
+     * <p>Profile company : &#51665; &#49345;&#49464;&#51452;&#49548;</p>
+     */
+    public static Object my_adress_detail
      
 
     static {
@@ -64,6 +94,10 @@ public class GlobalVariable {
             email_password = selectedVariables['email_password']
             email_id_22 = selectedVariables['email_id_22']
             email_id_21 = selectedVariables['email_id_21']
+            my_adress = selectedVariables['my_adress']
+            adress_name = selectedVariables['adress_name']
+            zip_code = selectedVariables['zip_code']
+            my_adress_detail = selectedVariables['my_adress_detail']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
