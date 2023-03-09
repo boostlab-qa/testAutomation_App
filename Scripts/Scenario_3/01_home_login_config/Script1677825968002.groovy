@@ -30,10 +30,10 @@ Mobile.startExistingApplication(GlobalVariable.appid)
 Mobile.scrollToText('질병, 진료과, 병원을 검색해보세요.')
 
 'STEP - 로그아웃 상태인 경우 로그인 진행'
-if(Mobile.waitForElementPresent(findTestObject('05_home/area_home_login'), GlobalVariable.fixedTime))
+if(Mobile.waitForElementPresent(findTestObject('05_home/area_login'), GlobalVariable.fixedTime))
 {
 	'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
-	Mobile.tap(findTestObject('05_home/btn_home_login'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime)
 	
 	'STEP - 로그인 화면 [이메일 로그인] 버튼 선택'
 	Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
@@ -49,34 +49,34 @@ if(Mobile.waitForElementPresent(findTestObject('05_home/area_home_login'), Globa
 }
 
 '기대결과 - 홈 주소 아이콘 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/icon_home_adress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_adress_icon'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 주소 이름 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/txt_home_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 주소 펼치기 [v] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/btn_home_adress_arrow'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/btn_adress_arrow'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 주소 찜한목록 [☆] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/btn_home_favorite'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/btn_favorite'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 주소 [QR] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/btn_home_qr'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/btn_qr'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 바 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 아이콘 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/icon_home_search'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_search_icon'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 플레이스홀더 문구 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/txt_home_search_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/txt_search_placeholder'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 //'기대결과 - 홈 상단 배너 노출'
-//Mobile.verifyElementVisible(findTestObject('05_home/area_home_top_banner'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//Mobile.verifyElementVisible(findTestObject('05_home/area_top_banner'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 //'기대결과 - 홈 상단 배너 인디케이터 노출'
-//Mobile.verifyElementVisible(findTestObject('05_home/area_home_top_banner_indicator'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//Mobile.verifyElementVisible(findTestObject('05_home/area_top_banner_indicator'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 컨텐츠 (투표) 타이틀 노출'
 Mobile.verifyElementVisible(findTestObject('05_home/02_contents/txt_vote_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -112,14 +112,14 @@ else
 Mobile.verifyElementVisible(findTestObject('05_home/02_contents/img_mom_recommend'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 컨텐츠 (진료과로 병원 찾기) 타이틀 미노출 상태면 스크롤 이동'
-if (Mobile.waitForElementNotPresent(findTestObject('05_home/02_contents/txt_find_hospital'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementNotPresent(findTestObject('05_home/02_contents/txt_find_hospital_medical'), GlobalVariable.fixedTime))
 	{
 		'STEP - 화면 스크롤 이동'
 		Mobile.scrollToText('진료과로 병원 찾기 🏥')
 	}
 
 '기대결과 - 홈 컨텐츠 (진료과로 병원 찾기) 타이틀 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/02_contents/txt_find_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/02_contents/txt_find_hospital_medical'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 컨텐츠 (진료과로 병원 찾기) 아이콘 미노출 상태면 스크롤 이동'
 if (Mobile.waitForElementNotPresent(findTestObject('05_home/02_contents/txt_find_hospital_paediatrics'), GlobalVariable.fixedTime))
@@ -129,7 +129,7 @@ if (Mobile.waitForElementNotPresent(findTestObject('05_home/02_contents/txt_find
 	}
 
 '기대결과 - 홈 컨텐츠 (진료과로 병원 찾기) 아이콘 리스트 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/02_contents/area_find_hospital_icon'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/02_contents/area_find_hospital_medical_icon'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 컨텐츠 (진료과로 병원 찾기) 소아청소년과 노출'
 Mobile.verifyElementVisible(findTestObject('05_home/02_contents/txt_find_hospital_paediatrics'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -230,35 +230,35 @@ Mobile.verifyElementVisible(findTestObject('05_home/02_contents/img_infant_check
 Mobile.scrollToText('그때 그 병원, 다시 방문하시겠어요?')
 
 'STEP - 홈 병원 추천(a) 리스트 영역 미노출 상태면 스크롤 이동'
-if (Mobile.waitForElementNotPresent(findTestObject('05_home/area_home_recommend_hospital'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementNotPresent(findTestObject('05_home/area_recommend_hospital'), GlobalVariable.fixedTime))
 	{
 		'STEP - 화면 스크롤 이동'
 		Mobile.swipe(45, 1080, 45, 700)
 	}
 
 '기대결과 - 홈 병원 추천(a) 타이틀 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/txt_home_recommend_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/txt_recommend_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 병원 추천(a) 병원 리스트 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_recommend_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_recommend_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 내 주변 약국 찾기 영역 미노출 상태면 스크롤 이동'
-if (Mobile.waitForElementNotPresent(findTestObject('05_home/txt_home_find_pharmacy'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementNotPresent(findTestObject('05_home/btn_find_pharmacy'), GlobalVariable.fixedTime))
 	{
 		'STEP - 화면 스크롤 이동'
 		Mobile.swipe(45, 1080, 45, 700)
 	}
 	
 '기대결과 - 홈 내 주변 약국 찾기 타이틀 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/txt_home_find_pharmacy'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/btn_find_pharmacy'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 내 주변 약국 찾기 안내문구 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/txt_home_find_pharmacy_guide'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/txt_find_pharmacy_description'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 최상단 스크롤 이동'
 Mobile.scrollToText('질병, 진료과, 병원을 검색해보세요.')
 
 //'기대결과 - 홈 하단 배너 영역 노출'
-//Mobile.verifyElementVisible(findTestObject('05_home/area_home_lower_banner'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//Mobile.verifyElementVisible(findTestObject('05_home/area_lower_banner'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 

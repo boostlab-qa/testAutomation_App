@@ -3,7 +3,7 @@
    <description>이메일 로그인 > 홈 > 카카오 연동 유도 바텀 시트 > 타이틀</description>
    <name>txt_kakao_agree_title</name>
    <tag></tag>
-   <elementGuidId>f5ead197-4eeb-4612-92a7-428825b9c755</elementGuidId>
+   <elementGuidId>56f25d44-1adb-464c-85f9-7cee78ae36b3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.bbros.sayup:id/tvTitle</value>
-      <webElementGuid>a7f2a562-5a4b-4abb-ad18-f29d8b97c3f8</webElementGuid>
+      <webElementGuid>e0164a27-da42-4617-963f-fb06c70a1023</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -22,7 +22,7 @@
       <value>이제부터 똑닥을
 카카오 계정으로
 이용해 보세요.</value>
-      <webElementGuid>cce04e30-87e8-4819-80a1-22f55c0c5bbb</webElementGuid>
+      <webElementGuid>12b3c88b-a614-4203-a27c-dc96b26d1a3f</webElementGuid>
    </webElementProperties>
    <locator>//*[@resource-id = 'com.bbros.sayup:id/tvTitle' and (@text = '이제부터 똑닥을
 카카오 계정으로

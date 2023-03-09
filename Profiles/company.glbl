@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>집 주소</description>
-      <initValue>'서울 영등포구 여의대로 108 (여의도동)'</initValue>
+      <initValue>'서울 영등포구 여의대로 108 (여의도동) '</initValue>
       <name>my_adress</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -57,7 +57,7 @@
    <GlobalVariableEntity>
       <description>회사 주소</description>
       <initValue>'여의도동'</initValue>
-      <name>location</name>
+      <name>adress_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>우편번호</description>

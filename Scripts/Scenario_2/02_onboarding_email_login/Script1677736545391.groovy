@@ -38,8 +38,39 @@ Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_email_l
 'STEP - 온보딩 [이메일 로그인] 버튼 선택'
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
 
-'기대결과 - 이메일 로그인 화면 노출'
-Mobile.verifyElementVisible(findTestObject('03_login/area_login_email'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//이메일 로그인 화면
+'기대결과 - 이메일 로그인 화면 타이틀 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/txt_email_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 [x] 버튼 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/btn_email_close'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 "이메일" 문구 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/txt_email_login_email'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 이메일 주소 input 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/input_login_email_id'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 "비밀번호" 문구 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/txt_email_login_password'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 패스워드 input 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/input_login_email_password'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+
+'기대결과 - 이메일 로그인 화면 "이메일 / 비밀번호 찾기" 문구 노출'
+Mobile.verifyElementVisible(findTestObject('03_login/email_login_find_email_password'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//
+
+//뒤로가기 페이지 이동
+'STEP - 닫기 [x] 버튼 선택'
+Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
+
+'기대결과 - 로그인 화면 타이틀 노출'
+Mobile.verifyElementVisible(findTestObject('02_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+//
+
+'STEP - 로그인 화면 [이메일 로그인] 버튼 선택'
+Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
 
 'STEP - 이메일 id 입력'
 Mobile.setText(findTestObject('03_login/input_login_email_id'), GlobalVariable.email_id, GlobalVariable.fixedTime)
@@ -63,16 +94,16 @@ Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/btn_kakao_agre
 Mobile.tap(findTestObject('05_home/01_home_popup/btn_kakao_agree_skip'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 주소 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 로그인 유도 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('05_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP- [마이페이지] 메뉴 선택'
-Mobile.tap(findTestObject('05_home/txt_home_menu_mypage'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 
 '기대결과 - 마이페이지 타이틀 {이름} 확인 노출'
 Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE)
@@ -81,6 +112,6 @@ Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), GlobalVar
 Mobile.verifyElementVisible(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 메뉴 선택'
-Mobile.tap(findTestObject('05_home/txt_home_menu_home'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)
 
 

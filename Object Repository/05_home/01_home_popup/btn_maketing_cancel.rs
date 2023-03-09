@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description></description>
+   <description>홈 > 마케팅 수신 동의 팝업 > [알림 받지 않기]</description>
    <name>btn_maketing_cancel</name>
    <tag></tag>
    <elementGuidId>08535841-161b-41a8-9ac7-04462a78da89</elementGuidId>

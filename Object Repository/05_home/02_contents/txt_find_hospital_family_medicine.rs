@@ -3,7 +3,7 @@
    <description>홈 > 컨텐츠 > 진료과로 병원 찾기 > 가정의학과</description>
    <name>txt_find_hospital_family_medicine</name>
    <tag></tag>
-   <elementGuidId>9ab986d1-512a-4379-bf37-3b6c7f75cb61</elementGuidId>
+   <elementGuidId>79ace809-6b9f-423c-9170-eadbb49616fc</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>cdb61e70-5e59-4f24-a7af-11eb6f68eeb3</webElementGuid>
+      <webElementGuid>b00949db-3bcb-4000-a131-3b8b2549adc9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>text</name>
       <type>Main</type>
       <value>가정의학과</value>
-      <webElementGuid>002af413-a3c1-495e-bcb0-4ad4cac9eb04</webElementGuid>
+      <webElementGuid>d4951d2d-916e-4f9a-806f-620d0daaed34</webElementGuid>
    </webElementProperties>
    <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '가정의학과' or . = '가정의학과')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>

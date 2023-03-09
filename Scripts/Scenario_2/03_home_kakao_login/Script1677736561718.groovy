@@ -22,10 +22,10 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 이미 로그인된 경우 로그아웃 진행' 
-if (Mobile.waitForElementNotPresent(findTestObject('05_home/btn_home_login'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementNotPresent(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime))
 {
 	'STEP - 홈 마이페이지 메뉴 선택'
-	Mobile.tap(findTestObject('05_home/txt_home_menu_mypage'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 	
 	'STEP - [수정] 버튼 선택'
 	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime)
@@ -37,11 +37,11 @@ if (Mobile.waitForElementNotPresent(findTestObject('05_home/btn_home_login'), Gl
 	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit_logout_confirm'), GlobalVariable.fixedTime)
 	
 	'STEP - 홈 메뉴 선택'
-	Mobile.tap(findTestObject('05_home/txt_home_menu_home'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)
 }
 
 'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
-Mobile.tap(findTestObject('05_home/btn_home_login'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime)
 
 '기대결과 - 로그인 화면 타이틀 노출'
 Mobile.verifyElementVisible(findTestObject('02_onboarding/txt_onboarding_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -59,10 +59,10 @@ Mobile.verifyElementVisible(findTestObject('02_onboarding/btn_onboarding_email_l
 Mobile.tap(findTestObject('03_login/btn_login_close'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 화면 (로그인 유도 영역) 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
-Mobile.tap(findTestObject('05_home/btn_home_login'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime)
 
 'STEP - 로그인 화면 [카카오로 시작하기] 버튼 선택'
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_login'), GlobalVariable.fixedTime)
@@ -71,16 +71,16 @@ Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_login'), GlobalVar
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_easy_login'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 주소 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 로그인 유도 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('05_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP- [마이페이지] 메뉴 선택'
-Mobile.tap(findTestObject('05_home/txt_home_menu_mypage'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 
 '기대결과 - 마이페이지 타이틀 {이름} 확인 노출'
 Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE)
@@ -89,7 +89,7 @@ Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), GlobalVar
 Mobile.verifyElementVisible(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 메뉴 선택'
-Mobile.tap(findTestObject('05_home/txt_home_menu_home'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)
 
 
 	

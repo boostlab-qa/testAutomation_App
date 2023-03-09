@@ -50,9 +50,9 @@
       <name>my_adress</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>집 주소 </description>
+      <description>주소 이름</description>
       <initValue>'상동'</initValue>
-      <name>location</name>
+      <name>adress_name</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>우편번호</description>

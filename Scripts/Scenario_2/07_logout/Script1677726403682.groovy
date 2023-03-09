@@ -21,7 +21,7 @@ import org.openqa.selenium.Keys as Keys
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 홈 마이페이지 메뉴 선택'
-Mobile.tap(findTestObject('05_home/txt_home_menu_mypage'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 
 'STEP - 비로그인 시 로그인 진행'
 if (Mobile.waitForElementPresent(findTestObject('07_mypage/btn_mypage_login'), GlobalVariable.fixedTime))
@@ -52,12 +52,12 @@ Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), '마이�
 Mobile.verifyElementVisible(findTestObject('07_mypage/btn_mypage_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 메뉴 선택'
-Mobile.tap(findTestObject('05_home/txt_home_menu_home'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 로그인 유도 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_home_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 병원 추천(a) 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('05_home/area_home_recommend'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('05_home/area_recommend'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 

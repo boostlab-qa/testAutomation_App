@@ -3,7 +3,7 @@
    <description>홈 > 마케팅 정보 수신 동의 팝업 > 타이틀</description>
    <name>txt_maketing_title</name>
    <tag></tag>
-   <elementGuidId>98eb84ad-8587-4c80-b4f2-8d8111c0018a</elementGuidId>
+   <elementGuidId>b4327f95-16a4-4402-97a7-8b385b4a5321</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>901196ce-5ac9-4651-b920-c0310c018c5c</webElementGuid>
+      <webElementGuid>ba80cf86-a2dd-4f69-9883-01113758850a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -21,7 +21,7 @@
       <type>Main</type>
       <value>똑닥 소식, 혜택 알림을
 받으시겠어요?</value>
-      <webElementGuid>a7aa465b-8abb-4c8d-b390-dcdd206f6eb7</webElementGuid>
+      <webElementGuid>680c0c82-4433-4201-8177-24fa573b64d5</webElementGuid>
    </webElementProperties>
    <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '똑닥 소식, 혜택 알림을
 받으시겠어요?' or . = '똑닥 소식, 혜택 알림을

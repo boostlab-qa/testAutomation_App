@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>홈 > 이벤트 팝업 > [닫기]</description>
+   <description>홈 > 이벤트 팝업 > [오늘 그만 보기]</description>
    <name>btn_event_close</name>
    <tag></tag>
    <elementGuidId>a5697fa0-42c6-447a-b9c6-60dca605b392</elementGuidId>

@@ -3,7 +3,7 @@
    <description>홈 > 컨텐츠 > 진료과로 병원 찾기 > 내과</description>
    <name>txt_find_hospital_medicine</name>
    <tag></tag>
-   <elementGuidId>92e722ac-3aaf-418d-9ac5-5101de30ac26</elementGuidId>
+   <elementGuidId>847fbec5-5db6-4087-9937-40483a48639f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>9588784e-4092-4d76-85fc-906a0dc822f5</webElementGuid>
+      <webElementGuid>74abf019-030e-45e4-b4b3-8140d03f9c23</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>text</name>
       <type>Main</type>
       <value>내과</value>
-      <webElementGuid>b129bcc3-46e5-4b2f-af9b-d21f19b79e07</webElementGuid>
+      <webElementGuid>41b49f21-cf8d-4f19-9b48-29ae9b8c1cd3</webElementGuid>
    </webElementProperties>
    <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '내과' or . = '내과')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>

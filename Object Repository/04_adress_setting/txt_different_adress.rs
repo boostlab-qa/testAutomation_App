@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>주소설정 > 등록한 주소명</description>
+   <description>주소설정 > 등록한 주소</description>
    <name>txt_different_adress</name>
    <tag></tag>
    <elementGuidId>1e97d31b-f268-44e5-a279-eeaf96d196ec</elementGuidId>

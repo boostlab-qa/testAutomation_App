@@ -3,7 +3,7 @@
    <description>홈 > 컨텐츠 > 진료과로 병원 찾기 > 피부과</description>
    <name>txt_find_hospital_dermatology</name>
    <tag></tag>
-   <elementGuidId>63f3df98-9b5b-46aa-a523-c7c39c893c81</elementGuidId>
+   <elementGuidId>69ed1902-e8e6-4bc9-a415-22ac0f01be23</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -12,7 +12,7 @@
       <name>resource-id</name>
       <type>Main</type>
       <value>com.bbros.sayup:id/tv_title</value>
-      <webElementGuid>c9c2abac-d94a-4641-bc51-84a467b4a00c</webElementGuid>
+      <webElementGuid>b5298732-a497-42f9-93d5-6e9fca2951af</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -20,7 +20,7 @@
       <name>text</name>
       <type>Main</type>
       <value>피부과</value>
-      <webElementGuid>5bc0025f-f3f7-40eb-8f26-590a1ab1fce0</webElementGuid>
+      <webElementGuid>0bb6eae2-ebbc-4cd2-9568-ff3ec91d068f</webElementGuid>
    </webElementProperties>
    <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_title' and (@text = '피부과' or . = '피부과')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
