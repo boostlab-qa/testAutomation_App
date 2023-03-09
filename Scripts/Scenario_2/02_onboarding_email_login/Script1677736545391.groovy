@@ -82,36 +82,36 @@ Mobile.setText(findTestObject('03_login/input_login_email_password'), GlobalVari
 Mobile.tap(findTestObject('03_login/btn_login_email_confirm'), GlobalVariable.fixedTime)
 
 '기대결과 - 카카오 연동 유도 바텀시트 타이틀 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/txt_kakao_agree_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/txt_kakao_agree_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 카카오 연동 유도 바텀시트 [동의하고 계속하기] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/btn_kakao_agree_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_kakao_agree_confirm'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 카카오 연동 유도 바텀시트 [오늘 하루 보지 않기] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/01_home_popup/btn_kakao_agree_skip'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/01_home_popup/btn_kakao_agree_skip'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [오늘 하루 보지 않기] 버튼 선택'
-Mobile.tap(findTestObject('05_home/01_home_popup/btn_kakao_agree_skip'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/01_home_popup/btn_kakao_agree_skip'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 주소 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 로그인 유도 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('04_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP- [마이페이지] 메뉴 선택'
-Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 
 '기대결과 - 마이페이지 타이틀 {이름} 확인 노출'
-Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('06_mypage/txt_mypage_title'), GlobalVariable.user_name, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 마이페이지 [수정] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 메뉴 선택'
-Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/btn_menu_home'), GlobalVariable.fixedTime)
 
 
