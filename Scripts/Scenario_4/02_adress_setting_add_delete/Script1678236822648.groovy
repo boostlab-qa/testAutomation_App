@@ -24,27 +24,27 @@ import com.kms.katalon.core.testobject.ConditionType
 Mobile.startExistingApplication(GlobalVariable.appid)
 
 'STEP - 로그인 상태인 경우 로그아웃 진행'
-if (Mobile.waitForElementNotPresent(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementNotPresent(findTestObject('04_home/btn_login'), GlobalVariable.fixedTime))
 {
 	'STEP - 홈 마이페이지 메뉴 선택'
-	Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('04_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 	
 	'STEP - [수정] 버튼 선택'
-	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.fixedTime)
 	
 	'STEP - [로그아웃] 버튼 선택'
-	Mobile.tap(findTestObject('07_mypage/btn_mapage_edit_logout'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('06_mypage/btn_mapage_edit_logout'), GlobalVariable.fixedTime)
 	
 	'STEP - 로그아웃 [확인] 버튼 선택'
-	Mobile.tap(findTestObject('07_mypage/btn_mypage_edit_logout_confirm'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('06_mypage/btn_mypage_edit_logout_confirm'), GlobalVariable.fixedTime)
 	
 	'STEP - 홈 메뉴 선택'
-	Mobile.tap(findTestObject('05_home/btn_menu_home'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('04_home/btn_menu_home'), GlobalVariable.fixedTime)
 }
 
 //qa22 이메일 계정 로그인
 'STEP - 홈 로그인 유도 영역 [시작하기] 버튼 선택'
-Mobile.tap(findTestObject('05_home/btn_login'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/btn_login'), GlobalVariable.fixedTime)
 	
 'STEP - 로그인 화면 [이메일 로그인] 버튼 선택'
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_email_login'), GlobalVariable.fixedTime)
@@ -60,7 +60,7 @@ Mobile.tap(findTestObject('03_login/btn_login_email_confirm'), GlobalVariable.fi
 //
 		
 'STEP - 홈 > 주소이름 선택'
-Mobile.tap(findTestObject('05_home/area_adress_name'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/area_adress_name'), GlobalVariable.fixedTime)
 
 //주소설정 화면 노출(우리집 설정 상태)
 '기대결과 - 뒤로가기 [<-] 버튼 노출'
@@ -70,68 +70,68 @@ Mobile.verifyElementVisible(findTestObject('00_common/btn_back'), GlobalVariable
 Mobile.verifyElementText(findTestObject('00_common/area_page_title'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - [편집] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/btn_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - "어디에 있는 병원을 찾으세요?" 타이틀 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/txt_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - [현위치에서 병원 찾기] 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/btn_current_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - [우리집] 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/btn_my_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/btn_my_home'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - [우리집] 하단 집주소 노출'
-Mobile.verifyElementText(findTestObject('04_adress_setting/area_adress'), GlobalVariable.my_adress, FailureHandling.STOP_ON_FAILURE)
+Mobile.verifyElementText(findTestObject('07_adress_setting/area_adress'), GlobalVariable.my_adress, FailureHandling.STOP_ON_FAILURE)
 //
 
 //주소 추가
 '주소 등록 가능한 상태면 주소 등록'
 while(true)
 {
-if(Mobile.waitForElementPresent(findTestObject('04_adress_setting/btn_different_location'), GlobalVariable.fixedTime))	
+if(Mobile.waitForElementPresent(findTestObject('07_adress_setting/btn_different_location'), GlobalVariable.fixedTime))	
 {
 	'STEP - [다른 위치에서 병원 찾기] 선택'
-	Mobile.tap(findTestObject('04_adress_setting/btn_different_location'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('07_adress_setting/btn_different_location'), GlobalVariable.fixedTime)
 	
 	'기대결과 - 주소 검색하기 타이틀 노출'
 	Mobile.verifyElementText(findTestObject('00_common/area_page_title'), '주소 검색하기', FailureHandling.STOP_ON_FAILURE)
 	
 	'STEP - 주소 입력'
-	Mobile.setText(findTestObject('04_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime)
+	Mobile.setText(findTestObject('07_adress_setting/input_adress_search_adress'), '경기 시흥시 배곧전원로 12-1', GlobalVariable.fixedTime)
 	
 	'STEP - [검색] 버튼 선택'
-	Mobile.tap(findTestObject('04_adress_setting/btn_adress_search'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('07_adress_setting/btn_adress_search'), GlobalVariable.fixedTime)
 	
 	'STEP - 도로명 주소 선택'
-	Mobile.tap(findTestObject('04_adress_setting/txt_adress_road_name'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('07_adress_setting/txt_adress_road_name'), GlobalVariable.fixedTime)
 	
 	'기대결과 - "상세주소 입력" 타이틀 노출'
 	Mobile.verifyElementText(findTestObject('00_common/area_page_title'), '상세주소 입력', FailureHandling.STOP_ON_FAILURE)
 	
 	'기대결과 - "주소" 문구 노출'
-	Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_adress_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.verifyElementVisible(findTestObject('07_adress_setting/txt_adress_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'기대결과 - 주소 input 영역에 집주소 노출'
-	Mobile.verifyElementText(findTestObject('04_adress_setting/input_adress_detail_adress'), '경기 시흥시 배곧전원로 12-1 (배곧동) (15010)', FailureHandling.STOP_ON_FAILURE)
+	Mobile.verifyElementText(findTestObject('07_adress_setting/input_adress_detail_adress'), '경기 시흥시 배곧전원로 12-1 (배곧동) (15010)', FailureHandling.STOP_ON_FAILURE)
 	
 	'기대결과 - "상세주소 (선택)" 문구 노출'
-	Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_adress_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.verifyElementVisible(findTestObject('07_adress_setting/txt_adress_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'기대결과 - 상세주소 input 노출'
-	Mobile.verifyElementVisible(findTestObject('04_adress_setting/input_adress_detail_adress_detail'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.verifyElementVisible(findTestObject('07_adress_setting/input_adress_detail_adress_detail'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'기대결과 - "주소 이름" 문구 노출'
-	Mobile.verifyElementVisible(findTestObject('04_adress_setting/input_adress_detail_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.verifyElementVisible(findTestObject('07_adress_setting/input_adress_detail_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'기대결과 - 주소 이름 input 노출'
-	Mobile.verifyElementVisible(findTestObject('04_adress_setting/input_adress_detail_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+	Mobile.verifyElementVisible(findTestObject('07_adress_setting/input_adress_detail_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 	
 	'STEP - 상세주소 입력'
-	Mobile.setText(findTestObject('04_adress_setting/input_adress_detail_adress_detail'), '1234', GlobalVariable.fixedTime)
+	Mobile.setText(findTestObject('07_adress_setting/input_adress_detail_adress_detail'), '1234', GlobalVariable.fixedTime)
 	
 	'STEP - 주소이름 입력'
-	Mobile.setText(findTestObject('04_adress_setting/input_adress_detail_adress_name'), 'TEST', GlobalVariable.fixedTime)	
+	Mobile.setText(findTestObject('07_adress_setting/input_adress_detail_adress_name'), 'TEST', GlobalVariable.fixedTime)	
 	
 	'STEP - [등록] 버튼 선택'
 	Mobile.tap(findTestObject('00_common/btn_complete'), GlobalVariable.fixedTime)
@@ -147,34 +147,34 @@ else
 Mobile.verifyElementText(findTestObject('00_common/area_page_title'), '주소 설정', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 등록한 주소이름 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 등록한 주소 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_different_adress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/txt_different_adress'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 주소 설정 화면 [다른 위치에서 병원 찾기] 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('04_adress_setting/btn_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('07_adress_setting/btn_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 주소 목록 하단 안내문구 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/txt_max_adress_guide'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/txt_max_adress_guide'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 //주소 삭제
 'STEP - [현위치에서 병원 찾기] 버튼 선택'
-Mobile.tap(findTestObject('04_adress_setting/btn_current_location'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('07_adress_setting/btn_current_location'), GlobalVariable.fixedTime)
 
 'STEP - 홈 주소이름 선택'
-Mobile.tap(findTestObject('05_home/area_adress_name'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/area_adress_name'), GlobalVariable.fixedTime)
 
 'STEP - [편집] 버튼 선택'
-Mobile.tap(findTestObject('04_adress_setting/btn_edit'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('07_adress_setting/btn_edit'), GlobalVariable.fixedTime)
 
 '[삭제] 버튼이 노출되면 주소 삭제'
 while(true)
 {
-if(Mobile.waitForElementPresent(findTestObject('04_adress_setting/btn_delete'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE))
+if(Mobile.waitForElementPresent(findTestObject('07_adress_setting/btn_delete'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE))
 {
 	'STEP - [삭제] 버튼 선택'
-	Mobile.tap(findTestObject('04_adress_setting/btn_delete'), GlobalVariable.fixedTime)
+	Mobile.tap(findTestObject('07_adress_setting/btn_delete'), GlobalVariable.fixedTime)
 		
 	'기대결과 - 삭제 확인 팝업 노출'
 	Mobile.verifyElementText(findTestObject('00_common/area_popup_title'), '저장된 주소를 삭제하시겠습니까?', FailureHandling.CONTINUE_ON_FAILURE)
@@ -192,13 +192,13 @@ else
 Mobile.tap(findTestObject('00_common/btn_back'), GlobalVariable.fixedTime)
 
 '기대결과 - 등록한 주소이름 미노출'
-Mobile.verifyElementNotVisible(findTestObject('04_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('07_adress_setting/btn_different_adress_name'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 주소 설정 화면 [다른 위치에서 병원 찾기] 영역 노출'
-Mobile.verifyElementVisible(findTestObject('04_adress_setting/btn_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('07_adress_setting/btn_different_location'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 주소 목록 하단 안내문구 미노출'
-Mobile.verifyElementNotVisible(findTestObject('04_adress_setting/txt_max_adress_guide'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('07_adress_setting/txt_max_adress_guide'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 //원상복귀
@@ -206,7 +206,7 @@ Mobile.verifyElementNotVisible(findTestObject('04_adress_setting/txt_max_adress_
 Mobile.tap(findTestObject('00_common/btn_back'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 화면 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
-Mobile.verifyElementVisible(findTestObject('05_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 

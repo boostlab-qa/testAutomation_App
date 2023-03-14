@@ -42,22 +42,22 @@ Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_login'), GlobalVar
 Mobile.tap(findTestObject('02_onboarding/btn_onboarding_kakao_easy_login'), GlobalVariable.fixedTime)
 
 '기대결과 - 홈 주소 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 검색 영역 노출'
-Mobile.verifyElementVisible(findTestObject('05_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/area_search_bar'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 로그인 유도 영역 미노출'
-Mobile.verifyElementNotVisible(findTestObject('05_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementNotVisible(findTestObject('04_home/area_login'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP- [마이페이지] 메뉴 선택'
-Mobile.tap(findTestObject('05_home/btn_menu_mypage'), GlobalVariable.fixedTime)
+Mobile.tap(findTestObject('04_home/btn_menu_mypage'), GlobalVariable.fixedTime)
 
 '기대결과 - 마이페이지 타이틀 {이름} 노출'
-Mobile.verifyElementText(findTestObject('07_mypage/txt_mypage_title'), GlobalVariable.user_name)
+Mobile.verifyElementText(findTestObject('06_mypage/txt_mypage_title'), GlobalVariable.user_name)
 
 '기대결과 - 마이페이지 [수정] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('07_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('06_mypage/btn_mypage_edit'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 

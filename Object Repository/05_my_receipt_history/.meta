@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FolderEntity>
-   <description></description>
-   <name>04_adress_setting</name>
+   <description>folder</description>
+   <name>05_my_receipt_history</name>
    <tag></tag>
    <folderType>WEBELEMENT</folderType>
 </FolderEntity>

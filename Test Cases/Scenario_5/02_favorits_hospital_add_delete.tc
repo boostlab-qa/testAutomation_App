@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>찜한 목록 병원&amp;약국 추가 삭제</description>
+   <name>02_favorits_hospital_add_delete</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef952cb4-1c0c-4040-a92d-b13b7e892c02</testCaseGuid>
+</TestCaseEntity>
