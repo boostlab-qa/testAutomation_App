@@ -248,14 +248,14 @@ Mobile.verifyElementNotVisible(findTestObject('04_home/txt_recommend_title'), Gl
 Mobile.verifyElementNotVisible(findTestObject('04_home/area_recommend_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - 홈 내 주변 약국 찾기 영역 미노출 상태면 스크롤 이동'
-if (Mobile.waitForElementNotPresent(findTestObject('04_home/btn_find_pharmacy'), GlobalVariable.fixedTime))
+if (Mobile.waitForElementNotPresent(findTestObject('04_home/btn_find_drugstore'), GlobalVariable.fixedTime))
 	{
 		'STEP - 화면 스크롤 이동'
 		Mobile.swipe(45, 1080, 45, 700)
 	}
 	
 '기대결과 - 홈 내 주변 약국 찾기 타이틀 노출'
-Mobile.verifyElementVisible(findTestObject('04_home/btn_find_pharmacy'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('04_home/btn_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 홈 내 주변 약국 찾기 안내문구 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/txt_find_pharmacy_description'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)

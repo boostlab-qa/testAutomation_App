@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
    <description>홈 > 찜한 목록 > [약국 찾기]</description>
-   <name>btn_favorits_find_drugstore</name>
+   <name>btn_find_drugstore</name>
    <tag></tag>
    <elementGuidId>d8de9938-6a60-411e-9fdb-d4fccaed6f7f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

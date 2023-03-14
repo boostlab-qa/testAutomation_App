@@ -28,10 +28,10 @@ Mobile.tap(findTestObject('04_home/btn_favorite'), GlobalVariable.fixedTime, Fai
 Mobile.verifyElementVisible(findTestObject('00_common/area_page_title'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - "찜한 병원" tab 노출'
-Mobile.verifyElementVisible(findTestObject('08_favorits/txt_favorits_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('08_favorits/txt_tab_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - "찜한 약국" tab 노출'
-Mobile.verifyElementVisible(findTestObject('08_favorits/txt_favorits_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('08_favorits/txt_tab_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - 미등록 화면 타이틀 노출'
 Mobile.verifyElementText(findTestObject('08_favorits/area_empty_title'), '찜한 병원이 없어요.', FailureHandling.CONTINUE_ON_FAILURE)
@@ -40,11 +40,11 @@ Mobile.verifyElementText(findTestObject('08_favorits/area_empty_title'), '찜한
 Mobile.verifyElementText(findTestObject('08_favorits/area_empty_description'), '관심 병원을 찜해보세요!', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - [병원 찾기] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('08_favorits/btn_favorits_find_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('08_favorits/btn_find_hospital'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 //
 
 'STEP - [병원 찾기] 버튼 선택'
-Mobile.tap(findTestObject('08_favorits/btn_favorits_find_hospital'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('08_favorits/btn_find_hospital'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
 
 '기대결과 - 홈 화면 노출'
 Mobile.verifyElementVisible(findTestObject('04_home/area_constraint_address'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
@@ -54,7 +54,7 @@ Mobile.verifyElementVisible(findTestObject('04_home/area_search_bar'), GlobalVar
 Mobile.tap(findTestObject('04_home/btn_favorite'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
 
 'STEP - 찜한 약국 tab 선택'
-Mobile.tap(findTestObject('08_favorits/txt_favorits_drugstore'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('08_favorits/txt_tab_drugstore'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
 
 '기대결과 - 미등록 화면 타이틀 노출'
 Mobile.verifyElementText(findTestObject('08_favorits/area_empty_title'), '찜한 약국이 없어요.', FailureHandling.CONTINUE_ON_FAILURE)
@@ -63,10 +63,10 @@ Mobile.verifyElementText(findTestObject('08_favorits/area_empty_title'), '찜한
 Mobile.verifyElementText(findTestObject('08_favorits/area_empty_description'), '관심 약국을 찜해보세요!', FailureHandling.CONTINUE_ON_FAILURE)
 
 '기대결과 - [약국 찾기] 버튼 노출'
-Mobile.verifyElementVisible(findTestObject('08_favorits/btn_favorits_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.verifyElementVisible(findTestObject('08_favorits/btn_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.CONTINUE_ON_FAILURE)
 
 'STEP - [약국 찾기] 버튼 선택'
-Mobile.tap(findTestObject('08_favorits/btn_favorits_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('08_favorits/btn_find_drugstore'), GlobalVariable.fixedTime, FailureHandling.STOP_ON_FAILURE)
 
 //네이버 약국 지도 화면 노출
 if(GlobalVariable.adress_name == '상동')

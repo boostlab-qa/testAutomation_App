@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MobileElementEntity>
-   <description>홈 > 찜한 목록 > 미등록 > [병원 찾기]</description>
-   <name>btn_favorits_find_hospital</name>
+   <description>홈 > 찜한병원 > 찜한목록 > 찜한 병원 tab</description>
+   <name>txt_tab_hospital</name>
    <tag></tag>
-   <elementGuidId>04bcce25-65c2-45bb-b772-a7035fb2ff9f</elementGuidId>
+   <elementGuidId>cd0e023d-3f29-41b5-ad51-c214d1fdba39</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
@@ -11,17 +11,17 @@
       <matchCondition>equals</matchCondition>
       <name>resource-id</name>
       <type>Main</type>
-      <value>com.bbros.sayup:id/tv_go_hospital</value>
-      <webElementGuid>b06fbbd8-d2bb-4201-b833-1403fb903696</webElementGuid>
+      <value>com.bbros.sayup:id/baseTabText</value>
+      <webElementGuid>ba6425f8-932d-4431-8a65-872053c2ed92</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>병원 찾기</value>
-      <webElementGuid>48d95e9c-e9b1-485e-b623-6d5adffe4cd7</webElementGuid>
+      <value>찜한 병원</value>
+      <webElementGuid>f8cc33c2-f5b2-4308-991f-7939326b5ac2</webElementGuid>
    </webElementProperties>
-   <locator>//*[@resource-id = 'com.bbros.sayup:id/tv_go_hospital' and (@text = '병원 찾기' or . = '병원 찾기')]</locator>
+   <locator>//*[@resource-id = 'com.bbros.sayup:id/baseTabText' and (@text = '찜한 병원' or . = '찜한 병원')]</locator>
    <locatorStrategy>XPATH</locatorStrategy>
 </MobileElementEntity>
